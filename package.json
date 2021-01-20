@@ -1,0 +1,41 @@
+{
+  "name": "Wordpress-Template",
+  "version": "1.0.0",
+  "description": "WordPressのテンプレート",
+  "main": "index.js",
+  "author": "Masanori Ogawa",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx gulp build --env dev",
+    "prod": "npx gulp build --env prod",
+    "start": "npx gulp",
+    "wp": "npx gulp wp --env wp",
+    "lint:style": "stylelint --fix src/**/*.scss"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.7",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-cheerio": "0.6.3",
+    "gulp-clean-css": "4.2.0",
+    "gulp-concat": "2.6.1",
+    "gulp-ejs": "4.1.1",
+    "gulp-if": "3.0.0",
+    "gulp-imagemin": "6.0.0",
+    "gulp-notify": "3.2.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-svgmin": "2.2.0",
+    "gulp-svgstore": "7.0.1",
+    "gulp-uglify": "3.0.2",
+    "gulp-watch": "5.0.1",
+    "gulp4-run-sequence": "0.4.0",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0",
+    "minimist": "1.2.0",
+    "stylelint": "10.1.0",
+    "stylelint-config-standard": "18.3.0",
+    "stylelint-scss": "3.9.2"
+  }
+}
