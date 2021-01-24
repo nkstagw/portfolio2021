@@ -1,0 +1,19 @@
+/**
+* @file _config.scss
+**/
+
+// フォントサイズ
+$DEFAULT_FONT_SIZE: 62.5%;
+
+// カラー
+$MAIN_COLOR:#0065b2;
+$SUB_COLOR_GRAY:#e5eaeb;
+$SUB_COLOR_WHITE:#fdfdfb;
+$FONT_COLOR:#05215c;
+
+// フォント
+$DEFAULT_FONT_FAMILY: "Arial",sans-serif;
+
+// メディアクエリ
+$MEDIA_TAB: 1024px;
+$MEDIA_SP: 768px;

@@ -1,0 +1,15 @@
+/**
+* @file _media.scss
+**/
+
+@mixin MEDIA_SP {
+  @media screen and ( max-width: #{$MEDIA_SP} ) {
+    @content;
+  }
+}
+
+@mixin MEDIA_TAB {
+  @media screen and ( max-width: #{$MEDIA_TAB} ) {
+    @content;
+  }
+}

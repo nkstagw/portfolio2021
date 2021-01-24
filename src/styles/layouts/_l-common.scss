@@ -1,0 +1,10 @@
+html,body{
+  font-size: $DEFAULT_FONT_SIZE;
+  font-family:$DEFAULT_FONT_FAMILY;
+}
+
+.inner{
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto; 
+}

@@ -22,7 +22,7 @@ const cheerio = require('gulp-cheerio');
 const svgmin = require('gulp-svgmin');
 const destDir = './dist/';
 const prodDir = './htdocs/';
-const wpDir = './wordpress/wp-content/themes/portfolio/';
+const wpDir = './wordpress/wp-content/themes/portfolio2021/';
 const config = {
   string: 'env',
   default: {

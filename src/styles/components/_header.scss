@@ -1,0 +1,129 @@
+.header{
+  width: 100vw;
+  height: 80px;
+  background-color: $SUB_COLOR_WHITE;
+
+  &__container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  }
+
+  &__logo{
+
+  }
+
+  &__nav{
+  display: flex ;
+
+  }
+
+  &__navItems{
+  display: flex;
+  }
+
+  &__navItem{
+    margin: 0 40px 0 0 ;
+  }
+
+  &__navLink{
+    position: relative;
+    padding: 10px 0;
+    line-height: 60px;
+    font-size: 1.4rem;
+    color: $FONT_COLOR;
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $MAIN_COLOR;
+      border-radius: 1px;
+      transition: all 0.5s;
+    }
+  }
+
+  &__contact{
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    background-color: $MAIN_COLOR;
+    border: 1px solid $MAIN_COLOR;
+    border-radius: 5px;
+    color: $SUB_COLOR_WHITE;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s;
+    &:hover{
+      background-color: $SUB_COLOR_WHITE;
+      color: $MAIN_COLOR;
+      transition: all 0.5s;
+    }
+  }
+
+  &__globalNav{
+    position: absolute;
+    left: 50%;
+    bottom: -201px;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    max-width: 1280px;
+    width: 90%;
+    height: 200px;
+    background-color: $SUB_COLOR_WHITE;
+    border: 1px solid $MAIN_COLOR;
+    transition: all 0.3s;
+  }
+}
+
+.has-child{
+  &::after{
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: -15px;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-50%) rotate(135deg);
+    border-top: 2px solid $FONT_COLOR;
+    border-right: 2px solid $FONT_COLOR;
+    transition: all 0.3s;
+  }
+}
+
+.is-active{
+  &::before{
+    width: 100%;
+    transition: all 0.5s;
+  }
+
+  &::after{
+    transform: rotate(-45deg);
+    transition: all 0.3s;
+  }
+}
+
+.nav-is-active{
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.blue{
+  width: 300px;
+  height: 100px;
+  background-color: blue;
+}
+
+.red{
+  width: 300px;
+  height: 100px;
+  background-color: red;
+}
