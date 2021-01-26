@@ -33,7 +33,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__container inner">
+    <div class="header__container h-inner">
       <h1 class="header__logo">
         <a href="#">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/AIGV.svg" alt="サイトのロゴ">
@@ -44,17 +44,68 @@
         <ul class="header__navItems">
           <li class="header__navItem">
             <a href="#" class="header__navLink has-child">制作実績</a>
-            <ul class="header__globalNav">
-              
+            <ul class="header__subNav">
+              <li class="header__subNavitem">
+                <a href="#">
+                  <div class="header__subNavimg">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                  </div>
+                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                </a>
+              </li>
+              <li class="header__subNavitem">
+                <a href="#">
+                  <div class="header__subNavimg">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                  </div>
+                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                </a>
+              </li>
+              <li class="header__subNavitem">
+                <a href="#">
+                  <div class="header__subNavimg">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                  </div>
+                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                </a>
+              </li>
+              <li class="header__subNavitem">
+                <a href="#">
+                  <div class="header__subNavimg">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                  </div>
+                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="header__navItem">
             <a href="#" class="header__navLink has-child">サービス</a>
-            <ul class="header__globalNav">
-              <li></li>
-              <li></li>
-              <li></li>
-              <div class="red"></div>
+            <ul class="header__subNav">
+            <li class="header__subNavitem">
+                <a href="#">
+                  <div class="header__subNavimg">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                  </div>
+                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                </a>
+              </li>
+              <li class="header__subNavitem">
+                <a href="#">
+                  <div class="header__subNavimg">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                  </div>
+                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                </a>
+              </li>
+              <li class="header__subNavitem">
+                <a href="#">
+                  <div class="header__subNavimg">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                  </div>
+                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="header__navItem">

@@ -1,10 +1,115 @@
-html,body{
+html ,body{
   font-size: $DEFAULT_FONT_SIZE;
   font-family:$DEFAULT_FONT_FAMILY;
+  color: $FONT_COLOR;
 }
 
-.inner{
+a{
+  color: $FONT_COLOR;
+}
+
+.br-pc{
+  display: block;
+  @include MEDIA_SP{
+    display: none;
+  }
+}
+
+.br-sp{
+  display: none;
+  @include MEDIA_SP{
+    display: block;
+  }
+}
+.h-inner{
   max-width: 1280px;
   width: 95%;
   margin: 0 auto; 
+}
+
+.inner{
+  max-width: 1140px;
+  width: 95%;
+  margin: 0 auto; 
+}
+
+.button{
+  position: relative;
+  display: block;
+  max-width: 340px;
+  height: 70px;
+  line-height: 70px;
+  margin: 80px auto 0; 
+  border: 1px solid $MAIN_COLOR;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $MAIN_COLOR;
+  text-align: center;
+  transition: all 0.5s;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 120%;
+    height: 100%;
+    background: $MAIN_COLOR;
+    transform-origin: right top;
+    transform: skewX(-30deg) scale(0, 1);
+    transition: transform .5s;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid $MAIN_COLOR;
+    border-right: 3px solid $MAIN_COLOR;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 0.5s;
+  }
+
+  &:hover{
+    border: 1px solid $SUB_COLOR_WHITE;
+    color: $SUB_COLOR_WHITE;
+    transition: all 0.5s;
+  }
+
+  &:hover::before {
+    transform-origin: left top;
+    transform: skewX(-30deg) scale(1, 1);
+  }
+
+  &:hover::after{
+    border-top: 3px solid $SUB_COLOR_WHITE;
+    border-right: 3px solid $SUB_COLOR_WHITE;
+    transition: all 0.5s;
+  }
+}
+
+.section{
+
+  &__enTtl{
+    font-size: 2.5rem;
+    color: $MAIN_COLOR;
+  }
+
+  &__ttl{
+    font-size: 3.5rem;
+  }
+
+  &__txt{
+    max-width: 855px;
+    width: 80%;
+    line-height: calc(30/14);
+    margin: 24px 0 0 0;
+    font-size: 1.4rem;
+  }
 }

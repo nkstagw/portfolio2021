@@ -1,0 +1,270 @@
+// fv------------------------------
+.fv{
+  position: relative;
+  width: 100vw;
+  height: 600px;
+
+  &__item{
+    width: 100vw;
+    height: 600px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__box{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 1000px;
+    padding: 30px 40px;
+    background-color: rgba(253, 253, 251,.7);
+    border: 1px solid $MAIN_COLOR;
+  }
+
+  &__ttl{
+    font-size: 4rem;
+    color: $MAIN_COLOR;
+    text-align: center;
+    text-shadow: 0 3px 6px rgba(0, 0, 0,.16);
+  }
+
+  &__enTtl{
+    font-size: 3rem;
+    color:$FONT_COLOR;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+}
+// fv------------------------------
+
+// works------------------------------
+.works{
+  padding: 120px 0 40px; 
+
+  &__content{
+    margin: 40px 0 0 0; 
+  }
+
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card{
+    display: block;
+    width: calc((100% - 60px ) / 3 );
+    padding: 20px 20px 20px 20px;
+    border: 1px solid $SUB_COLOR_GRAY;
+    box-shadow: 20px 20px 10px rgba(0,101,178,.16);
+    transition: all 0.5s;
+    &:hover{
+      border: 1px solid $MAIN_COLOR;
+      transition: all 0.5s;
+    }
+  }
+
+  &__cardImg{
+    width: 100%;
+    @include IMG{};
+  }
+
+  &__cardTxt{
+    margin: 20px 0 0 0;
+  }
+
+  &__tbl{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 20px;
+  }
+
+  &__tblTtl{
+    width: 30%;
+    font-size: 1.4rem;
+    vertical-align: middle;
+  }
+
+  &__tblCnt{
+    width: 70%;
+    font-size: 1.4rem;
+    vertical-align: middle;
+  }
+
+}
+// works------------------------------
+
+// service------------------------------
+.service{
+  padding: 40px 0 ; 
+
+  &__content{
+    margin: 40px 0 0 0; 
+  }
+
+  &__card{
+    display: flex;
+    width: 100%;
+    margin:64px 0 0 0;
+    padding: 40px;
+    border: 1px solid $MAIN_COLOR;
+    border-radius: 5px;
+    &:first-child{
+      margin: 0 0 0 0;
+    }
+  }
+
+  &__cardCnt{
+    max-width: 670px;
+  }
+
+  &__cardTtl{
+    font-size: 2.5rem;
+  }
+
+  &__cardTxt{
+    line-height: calc(30/14);
+    margin: 40px 0 0 0; 
+    font-size: 1.4rem;
+  }
+
+  &__cardImg{
+    max-width: 350px; 
+    margin: 0 0 0 40px; 
+    @include IMG{};
+  }
+}
+  // service------------------------------
+
+  // about------------------------------
+.about{
+  padding: 40px 0 ; 
+
+  &__content{
+    margin: 40px 0 0 0; 
+  }
+
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card{
+    width: calc((100% - 60px ) / 3 );
+    padding: 20px 20px 40px 20px;
+    border: 1px solid $MAIN_COLOR;
+    border-radius: 5px;
+  }
+
+  &__cardImg{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; 
+    @include IMG{};
+  }
+
+  &__cardTtl{
+    font-size: 2rem;
+    color: $MAIN_COLOR;
+    text-align: center;
+  }
+
+  &__cardTxt{
+    line-height: calc(30/14);
+    margin: 20px 0 0 0;
+    font-size: 1.4rem;
+    
+  }
+}
+  // about------------------------------
+
+    // news------------------------------
+.news{
+  padding: 40px 0 ; 
+
+  &__content{
+    margin: 40px 0 0 0; 
+  }
+  &__article{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid $SUB_COLOR_GRAY;
+    border-bottom: 1px solid $SUB_COLOR_GRAY;
+
+    &--date{
+      width: 130px;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    &--category{
+      width: 130px;
+      margin: 0 0 0 20px;
+      padding: 7px 0;
+      background-color: $SUB_COLOR_GRAY;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    &--ttl{
+      width: calc(100% - 300px);
+      margin: 0 0 0 40px;
+      padding: 0 20px 0 0;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $MAIN_COLOR;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+  // news------------------------------
+
+      // contact------------------------------
+.contact{
+  padding: 40px 0; 
+  background-color: $SUB_COLOR_GRAY;
+
+  &__enTtl, &__ttl{
+    text-align: center;
+  }
+  &__content{
+    margin: 20px 0 0 0; 
+  }
+
+  &__txt{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  &__button{
+    max-width: 570px;
+    margin: 20px auto 0;
+    background-color: $MAIN_COLOR;
+    border: 1px solid $SUB_COLOR_WHITE;
+    color: $SUB_COLOR_WHITE;
+    &::after{
+      border-top: 3px solid $SUB_COLOR_WHITE;
+      border-right: 3px solid $SUB_COLOR_WHITE;
+    }
+
+    &:hover{
+      background-color: $SUB_COLOR_WHITE;
+      border: 1px solid $MAIN_COLOR;
+      color: $MAIN_COLOR;
+    }
+    &:hover::after{
+      border-top: 3px solid $MAIN_COLOR;
+      border-right: 3px solid $MAIN_COLOR;
+    }
+
+  }
+
+}
+  // contact------------------------------

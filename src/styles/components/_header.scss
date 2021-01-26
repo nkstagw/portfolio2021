@@ -2,6 +2,7 @@
   width: 100vw;
   height: 80px;
   background-color: $SUB_COLOR_WHITE;
+  border-bottom: 1px solid $MAIN_COLOR;
 
   &__container{
   position: relative;
@@ -33,7 +34,6 @@
     padding: 10px 0;
     line-height: 60px;
     font-size: 1.4rem;
-    color: $FONT_COLOR;
     &::before{
       content: "";
       position: absolute;
@@ -67,19 +67,45 @@
     }
   }
 
-  &__globalNav{
+  &__subNav{
     position: absolute;
     left: 50%;
-    bottom: -201px;
+    bottom: -250px;
     transform: translateX(-50%);
-    visibility: hidden;
-    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1280px;
     width: 90%;
-    height: 200px;
+    height: 250px;
+    padding: 0 40px;
     background-color: $SUB_COLOR_WHITE;
     border: 1px solid $MAIN_COLOR;
-    transition: all 0.3s;
+    border-top: none;
+    z-index: $index_1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  &__subNavitem{
+    max-width: 250px;
+    margin: 0 0 0 20px; 
+    border: 1px solid black;
+    &:first-child{
+      margin: 0; 
+    }
+  }
+
+  &__subNavimg{
+    
+    @include IMG{};
+  }
+
+  &__subNavcnt{
+    padding: 10px;
+    font-size: 1.4rem;
+    text-decoration: none;
   }
 }
 
@@ -94,7 +120,7 @@
     transform: translateY(-50%) rotate(135deg);
     border-top: 2px solid $FONT_COLOR;
     border-right: 2px solid $FONT_COLOR;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 }
 
@@ -106,24 +132,12 @@
 
   &::after{
     transform: rotate(-45deg);
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 }
 
 .nav-is-active{
   visibility: visible;
   opacity: 1;
-  transition: all 0.3s;
-}
-
-.blue{
-  width: 300px;
-  height: 100px;
-  background-color: blue;
-}
-
-.red{
-  width: 300px;
-  height: 100px;
-  background-color: red;
+  transition: all 0.5s;
 }
