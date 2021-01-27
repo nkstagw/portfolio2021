@@ -115,32 +115,34 @@
         </ul>
         <a href="#" class="header__contact">お問い合わせ</a>
       </nav>
-
-      <div class="header__hamburger">
+      
+      <label for="hamburger" class="header__hamburger">
         <span class="header__menuBar"></span>
         <span class="header__menuBar"></span>
         <span class="header__menuBar"></span>
-      </div>
+      </label>
     </div>
-
+    <input type="checkbox" name="hamburger" id="hamburger" class="checkbox">
     <div class="header__spMenu">
-      <div class="header__spLogo">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/AIGV_white.svg" alt="">
+      <div class="header__spContainer inner">
+        <div class="header__spLogo">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/AIGV_white.svg" alt="">
+        </div>
+        <nav class="header__spNav">
+          <ul class="header__spNavitems">
+            <li class="header__spNavitem"><a href="#" class="header__spLink">ホーム</a></li>
+            <li class="header__spNavitem"><a href="#" class="header__spLink">制作実績</a></li>
+            <li class="header__spNavitem"><a href="#" class="header__spLink">サービス一覧</a></li>
+            <li class="header__spNavitem"><a href="#" class="header__spLink">AIGVについて</a></li>
+            <li class="header__spNavitem"><a href="#" class="header__spLink">お知らせ</a></li>
+            <li class="header__spNavitem"><a href="#" class="header__spLink">サイトマップ</a></li>
+            <li class="header__spNavitem"><a href="#" class="header__spLink">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+        <hr>
+        <a href="" class="header__contact header__spContact">お問い合わせ</a>
+        <label for="hamburger" class="header__spNavclose">閉じる</label>
       </div>
-      <nav class="header__spNav">
-        <ul class="header__spNavitems">
-          <li class="header__spNavitem"><a href="#" class="header__spLink">ホーム</a></li>
-          <li class="header__spNavitem"><a href="#" class="header__spLink">制作実績</a></li>
-          <li class="header__spNavitem"><a href="#" class="header__spLink">サービス一覧</a></li>
-          <li class="header__spNavitem"><a href="#" class="header__spLink">AIGVについて</a></li>
-          <li class="header__spNavitem"><a href="#" class="header__spLink">お知らせ</a></li>
-          <li class="header__spNavitem"><a href="#" class="header__spLink">サイトマップ</a></li>
-          <li class="header__spNavitem"><a href="#" class="header__spLink">プライバシーポリシー</a></li>
-        </ul>
-      </nav>
-      <hr>
-      <a href="" class="header__contact">お問い合わせ</a>
-      <button class="header__navClose">閉じる</button>
     </div>
 
   </header>

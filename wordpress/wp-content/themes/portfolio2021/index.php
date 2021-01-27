@@ -7,7 +7,7 @@
       <li class="fv__item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/fv_3@2x.png" alt=""></li>
     </ul>
     <div class="fv__box">
-      <h2 class="fv__ttl">お客様にとって一番「お節介な人」であるために</h2>
+      <h2 class="fv__ttl">お客様にとって一番 <br class="br-tab">「お節介な人」であるために</h2>
       <p class="fv__enTtl">Meddling in a Good Way</p>
     </div>
   </section>
@@ -174,7 +174,7 @@
             <div class="about__cardImg">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/about_3.svg" alt="">
             </div>
-            <h4 class=about__cardTtl>目的達成のために本当の価値提供</h4>
+            <h4 class=about__cardTtl>本当の価値提供</h4>
             <p class="about__cardTxt">Webサイトを制作するだけでなく、お客様が求めている価値を見極め、先を見据えた行動から常に120％の成果を出していきます。</p>
           </div>
 
@@ -191,23 +191,29 @@
         <h3 class="section__ttl">お知らせ</h3>
       </div>
       <div class="news__content">
+      <?php
+        $information= get_posts( array(
+        //ここで取得条件を指定する
+        'posts_per_page' => 3
+        ));
+        if($information):
+      ?>
+      <?php
+        foreach( $information as $post ):
+        setup_postdata( $post );
+      ?>
         <div class="news__article">
-          <div class="news__article--date">2021. 1. 1</div>
-          <div class="news__article--category">カテゴリ</div>
-          <a href="#" class="news__article--ttl">サイトリニューアルいたしました</a>
+          <div class="news__article--date"><?php the_time('Y年n月j日'); ?></div>
+          <div class="news__article--category"><?php the_category(); ?></div>
+          <a href="<?php the_permalink(); ?>" class="news__article--ttl"><?php the_title(); ?></a>
         </div>
-
-        <div class="news__article">
-          <div class="news__article--date">2020. 12. 14</div>
-          <div class="news__article--category">カテゴリ</div>
-          <a href="#" class="news__article--ttl">ここのタイトルは非常に長いですが3点リーダーを実装しているのでスタイルが崩れる事がありません。ここのタイトルは非常に長いですが</a>
-        </div>
-
-        <div class="news__article">
-          <div class="news__article--date">2020. 11. 30</div>
-          <div class="news__article--category">カテゴリ</div>
-          <a href="#" class="news__article--ttl">サイトリニューアルいたしました</a>
-        </div>
+        <?php
+          endforeach;
+          wp_reset_postdata();
+        ?>
+        <?php else: ?>
+          <p>表示できる情報はありません。</p>
+        <?php endif; ?>
         <a href="" class="button">詳細はこちら</a>
       </div><!-- content -->
     </div><!-- container -->

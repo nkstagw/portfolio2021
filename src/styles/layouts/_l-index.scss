@@ -23,6 +23,12 @@
     padding: 30px 40px;
     background-color: rgba(253, 253, 251,.7);
     border: 1px solid $MAIN_COLOR;
+
+    @include MEDIA_TAB{
+      top: 70%;
+      width: 95%;
+      padding: 10px 0;
+    }
   }
 
   &__ttl{
@@ -30,6 +36,12 @@
     color: $MAIN_COLOR;
     text-align: center;
     text-shadow: 0 3px 6px rgba(0, 0, 0,.16);
+    @include MEDIA_TAB{
+      font-size: 4vw;
+    }
+    @include MEDIA_SP{
+      font-size: 7vw;
+    }
   }
 
   &__enTtl{
@@ -37,6 +49,12 @@
     color:$FONT_COLOR;
     text-align: center;
     letter-spacing: 0.1rem;
+    @include MEDIA_TAB{
+      font-size: 4vw;
+    }
+    @include MEDIA_SP{
+      font-size: 5vw;
+    }
   }
 }
 // fv------------------------------
@@ -83,8 +101,11 @@
   }
 
   &__cardImg{
-    width: 100%;
+    max-width: 320px; 
     @include IMG{};
+    @include MEDIA_SP{
+      margin: 0 auto; 
+    }
   }
 
   &__cardTxt{
@@ -130,6 +151,10 @@
     &:first-child{
       margin: 0 0 0 0;
     }
+    @include MEDIA_SP{
+      flex-direction: column-reverse;
+      padding: 20px 10px;
+    }
   }
 
   &__cardCnt{
@@ -138,18 +163,27 @@
 
   &__cardTtl{
     font-size: 2.5rem;
+    @include MEDIA_SP{
+      margin: 20px 0 0 0 ;
+    }
   }
 
   &__cardTxt{
     line-height: calc(30/14);
     margin: 40px 0 0 0; 
     font-size: 1.4rem;
+    @include MEDIA_SP{
+      margin: 20px 0 0 0 ;
+    }
   }
 
   &__cardImg{
     max-width: 350px; 
     margin: 0 0 0 40px; 
     @include IMG{};
+    @include MEDIA_SP{
+      margin: 0 auto;
+    }
   }
 }
   // service------------------------------
@@ -165,6 +199,9 @@
   &__cards{
     display: flex;
     justify-content: space-between;
+    @include MEDIA_SP{
+      display: block;
+    }
   }
 
   &__card{
@@ -172,6 +209,13 @@
     padding: 20px 20px 40px 20px;
     border: 1px solid $MAIN_COLOR;
     border-radius: 5px;
+    @include MEDIA_SP{
+      width: 100%;
+      margin: 40px 0 0 0;
+      &:first-child{
+        margin: 0;
+      }
+    }
   }
 
   &__cardImg{
@@ -210,12 +254,20 @@
     padding: 20px 0;
     border-top: 1px solid $SUB_COLOR_GRAY;
     border-bottom: 1px solid $SUB_COLOR_GRAY;
+    @include MEDIA_SP{
+      display: block;
+    }
 
     &--date{
       max-width: 130px;
       width: 15%;
       font-size: 1.8rem;
       font-weight: bold;
+      @include MEDIA_SP{
+        display: inline-block;
+        width: 30%;
+        font-size: 1.4rem;
+      }
     }
 
     &--category{
@@ -226,6 +278,13 @@
       background-color: $SUB_COLOR_GRAY;
       font-size: 1.2rem;
       text-align: center;
+      @include MEDIA_SP{
+        display: inline-block;
+        max-width: 100px;
+        width: 30%;
+        margin: 0; 
+        padding: 5px 8px;
+      }
     }
 
     &--ttl{
@@ -239,6 +298,11 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      @include MEDIA_SP{
+        width: 100%;
+        margin: 10px 0 0 0; 
+        font-size: 1.4rem;
+      }
     }
   }
 }

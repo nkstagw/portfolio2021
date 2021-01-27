@@ -4,19 +4,44 @@
   padding: 80px 0 0; 
   background-color: #05215C;
   color: $SUB_COLOR_WHITE;
+  @include MEDIA_SP{
+    height: auto;
+    padding: 20px 0;
+  }
 
   &__container{
     display: flex;
     justify-content: space-between;
+    @include MEDIA_SP{
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__head{
+    @include MEDIA_SP{
+      margin: 40px 0 0 0;
+    }
+  }
+
+  &__nav{
+    @include MEDIA_SP{
+      padding: 0 20px;
+    }
   }
 
   &__navItems{
     display: flex;
     justify-content: space-between;
+    @include MEDIA_SP{
+      display: block;
+    }
   }
 
   &__navItem{
     margin: 0 0 0 60px;
+    @include MEDIA_SP{
+      margin: 20px 0 0 0;
+    }
   }
 
   &__link{
@@ -26,7 +51,9 @@
   }
 
   &__subItems{
-
+      @include MEDIA_SP{
+        padding: 0 20px;
+      }
   }
 
   &__subItem{
@@ -43,4 +70,7 @@
   margin: 96px 0 0 0 ; 
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
+  @include MEDIA_SP{
+    margin: 20px 0 0 0;
+  }
 }

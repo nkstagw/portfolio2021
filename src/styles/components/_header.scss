@@ -1,3 +1,11 @@
+// keyframe
+@keyframes sp_menu {
+
+  100%{
+    opacity: 1;
+  }
+}
+
 .header{
   width: 100vw;
   height: 80px;
@@ -159,11 +167,48 @@
     display: none;
     width: 100vw;
     height: 100vh;
+    padding: 20px 0;
     background-color: $FONT_COLOR;
+    opacity: 0;
+  }
+  &__spContainer{
+    position: relative;
+    height: 100%;
+  }
+  &__spNav{
+    margin: 20px 0 0 0;
+  }
+  &__spNavitem{
+    padding: 10px 0;
+  }
+  &__spLink{
+    font-size: 1.8rem;
+    color: $SUB_COLOR_WHITE;
   }
 
-  &__spLink{
-    color: $SUB_COLOR_WHITE;
+  &__spContact{
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  &__spNavclose{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: $SUB_COLOR_WHITE;
+    border-radius: 999px;
+    font-size: 1.8rem;
+    text-align: center;
+    transition: all 0.5s;
+    &:hover{
+      background-color: $MAIN_COLOR;
+      color: $SUB_COLOR_WHITE;
+      transition: all 0.5s;
+
+    }
   }
   // spメニュー------------------------------
 }
@@ -199,4 +244,14 @@
   visibility: visible;
   opacity: 1;
   transition: all 0.5s;
+}
+
+.checkbox{
+  display: none;
+
+  &[type="checkbox"]:checked~.header__spMenu{
+    position: fixed;
+    display: block;
+    animation: sp_menu 0.5s ease 0s 1 forwards;
+  }
 }

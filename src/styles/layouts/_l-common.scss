@@ -15,6 +15,13 @@ a{
   }
 }
 
+.br-tab{
+  display: none;
+  @include MEDIA_TAB{
+    display: block;
+  }
+}
+
 .br-sp{
   display: none;
   @include MEDIA_SP{
