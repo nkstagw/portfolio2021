@@ -194,19 +194,19 @@
         <div class="news__article">
           <div class="news__article--date">2021. 1. 1</div>
           <div class="news__article--category">カテゴリ</div>
-          <div class="news__article--ttl">サイトリニューアルいたしました</div>
+          <a href="#" class="news__article--ttl">サイトリニューアルいたしました</a>
         </div>
 
         <div class="news__article">
           <div class="news__article--date">2020. 12. 14</div>
           <div class="news__article--category">カテゴリ</div>
-          <div class="news__article--ttl">ここのタイトルは非常に長いですが3点リーダーを実装しているのでスタイルが崩れる事がありません。ここのタイトルは非常に長いですが</div>
+          <a href="#" class="news__article--ttl">ここのタイトルは非常に長いですが3点リーダーを実装しているのでスタイルが崩れる事がありません。ここのタイトルは非常に長いですが</a>
         </div>
 
         <div class="news__article">
           <div class="news__article--date">2020. 11. 30</div>
           <div class="news__article--category">カテゴリ</div>
-          <div class="news__article--ttl">サイトリニューアルいたしました</div>
+          <a href="#" class="news__article--ttl">サイトリニューアルいたしました</a>
         </div>
         <a href="" class="button">詳細はこちら</a>
       </div><!-- content -->

@@ -18,7 +18,9 @@
 
   &__nav{
   display: flex ;
-
+  @include MEDIA_SP{
+    display: none;
+  }
   }
 
   &__navItems{
@@ -67,7 +69,8 @@
     }
   }
 
-  &__subNav{
+  // ドロップダウンメニュー------------------------------
+  &__subItems{
     position: absolute;
     left: 50%;
     bottom: -250px;
@@ -88,7 +91,7 @@
     transition: all 0.5s;
   }
 
-  &__subNavitem{
+  &__subItem{
     max-width: 250px;
     margin: 0 0 0 20px; 
     border: 1px solid black;
@@ -97,16 +100,72 @@
     }
   }
 
-  &__subNavimg{
+  &__subImg{
     
     @include IMG{};
   }
 
-  &__subNavcnt{
+  &__subCnt{
     padding: 10px;
     font-size: 1.4rem;
     text-decoration: none;
   }
+  // ドロップダウンメニュー------------------------------
+
+  // ハンバーガーメニュー------------------------------
+  &__hamburger{
+    position: relative;
+    display: none;
+    width: 40px;
+    height: 30px;
+
+    @include MEDIA_SP{
+      display: block;
+    }
+  }
+
+  &__menuBar{
+    position: absolute;
+    display: block;
+    height: 3px;
+    background-color: $MAIN_COLOR;
+    border-radius: 1px;
+
+    &:first-child{
+      top: 0;
+      width: 100%;
+    }
+
+    &:nth-child(2){
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 70%;
+    }
+
+    &:last-child{
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  // ハンバーガーメニュー------------------------------
+
+  // spメニュー------------------------------
+  &__spMenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $index_max;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: $FONT_COLOR;
+  }
+
+  &__spLink{
+    color: $SUB_COLOR_WHITE;
+  }
+  // spメニュー------------------------------
 }
 
 .has-child{

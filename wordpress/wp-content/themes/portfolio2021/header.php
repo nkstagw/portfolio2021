@@ -15,7 +15,7 @@
 
   <!-- font CDN -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- slick CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
@@ -44,66 +44,66 @@
         <ul class="header__navItems">
           <li class="header__navItem">
             <a href="#" class="header__navLink has-child">制作実績</a>
-            <ul class="header__subNav">
-              <li class="header__subNavitem">
+            <ul class="header__subItems">
+              <li class="header__subItem">
                 <a href="#">
-                  <div class="header__subNavimg">
+                  <div class="header__subImg">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
                   </div>
-                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
                 </a>
               </li>
-              <li class="header__subNavitem">
+              <li class="header__subItem">
                 <a href="#">
-                  <div class="header__subNavimg">
+                  <div class="header__subImg">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
                   </div>
-                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
                 </a>
               </li>
-              <li class="header__subNavitem">
+              <li class="header__subItem">
                 <a href="#">
-                  <div class="header__subNavimg">
+                  <div class="header__subImg">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
                   </div>
-                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
                 </a>
               </li>
-              <li class="header__subNavitem">
+              <li class="header__subItem">
                 <a href="#">
-                  <div class="header__subNavimg">
+                  <div class="header__subImg">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
                   </div>
-                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="header__navItem">
             <a href="#" class="header__navLink has-child">サービス</a>
-            <ul class="header__subNav">
-            <li class="header__subNavitem">
+            <ul class="header__subItems">
+              <li class="header__subItem">
                 <a href="#">
-                  <div class="header__subNavimg">
+                  <div class="header__subImg">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
                   </div>
-                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
                 </a>
               </li>
-              <li class="header__subNavitem">
+              <li class="header__subItem">
                 <a href="#">
-                  <div class="header__subNavimg">
+                  <div class="header__subImg">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
                   </div>
-                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
                 </a>
               </li>
-              <li class="header__subNavitem">
+              <li class="header__subItem">
                 <a href="#">
-                  <div class="header__subNavimg">
+                  <div class="header__subImg">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
                   </div>
-                  <p class="header__subNavcnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
                 </a>
               </li>
             </ul>
@@ -115,6 +115,32 @@
         </ul>
         <a href="#" class="header__contact">お問い合わせ</a>
       </nav>
+
+      <div class="header__hamburger">
+        <span class="header__menuBar"></span>
+        <span class="header__menuBar"></span>
+        <span class="header__menuBar"></span>
+      </div>
+    </div>
+
+    <div class="header__spMenu">
+      <div class="header__spLogo">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/AIGV_white.svg" alt="">
+      </div>
+      <nav class="header__spNav">
+        <ul class="header__spNavitems">
+          <li class="header__spNavitem"><a href="#" class="header__spLink">ホーム</a></li>
+          <li class="header__spNavitem"><a href="#" class="header__spLink">制作実績</a></li>
+          <li class="header__spNavitem"><a href="#" class="header__spLink">サービス一覧</a></li>
+          <li class="header__spNavitem"><a href="#" class="header__spLink">AIGVについて</a></li>
+          <li class="header__spNavitem"><a href="#" class="header__spLink">お知らせ</a></li>
+          <li class="header__spNavitem"><a href="#" class="header__spLink">サイトマップ</a></li>
+          <li class="header__spNavitem"><a href="#" class="header__spLink">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <a href="" class="header__contact">お問い合わせ</a>
+      <button class="header__navClose">閉じる</button>
     </div>
 
   </header>

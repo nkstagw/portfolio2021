@@ -1,0 +1,46 @@
+.footer{
+  width: 100vw;
+  height: 300px;
+  padding: 80px 0 0; 
+  background-color: #05215C;
+  color: $SUB_COLOR_WHITE;
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navItems{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navItem{
+    margin: 0 0 0 60px;
+  }
+
+  &__link{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $SUB_COLOR_WHITE;
+  }
+
+  &__subItems{
+
+  }
+
+  &__subItem{
+    margin: 25px 0 0 0;
+  }
+
+  &__subLink{
+    font-size: 1.4rem;
+    color: $SUB_COLOR_WHITE;
+  }
+}
+
+.copyright{
+  margin: 96px 0 0 0 ; 
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
