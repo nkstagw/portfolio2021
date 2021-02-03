@@ -8,6 +8,7 @@ a{
   color: $FONT_COLOR;
 }
 
+// br------------------------------
 .br-pc{
   display: block;
   @include MEDIA_SP{
@@ -28,6 +29,9 @@ a{
     display: block;
   }
 }
+// br------------------------------
+
+// inner------------------------------
 .h-inner{
   max-width: 1280px;
   width: 95%;
@@ -39,7 +43,9 @@ a{
   width: 90%;
   margin: 0 auto; 
 }
+// inner------------------------------
 
+// button------------------------------
 .button{
   position: relative;
   display: block;
@@ -100,7 +106,9 @@ a{
     transition: all 0.5s;
   }
 }
+// button------------------------------
 
+// section head------------------------------
 .section{
 
   &__enTtl{
@@ -119,4 +127,84 @@ a{
     margin: 24px 0 0 0;
     font-size: 1.4rem;
   }
+}
+// section head------------------------------
+
+// contact------------------------------
+.contact{
+  padding: 40px 0; 
+  background-color: $SUB_COLOR_GRAY;
+
+  &__enTtl, &__ttl{
+    text-align: center;
+  }
+  &__content{
+    margin: 20px 0 0 0; 
+  }
+
+  &__txt{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  &__button{
+    max-width: 570px;
+    margin: 20px auto 0;
+    background-color: $MAIN_COLOR;
+    border: 1px solid $SUB_COLOR_WHITE;
+    color: $SUB_COLOR_WHITE;
+    &::after{
+      border-top: 3px solid $SUB_COLOR_WHITE;
+      border-right: 3px solid $SUB_COLOR_WHITE;
+    }
+
+    &:hover{
+      background-color: $SUB_COLOR_WHITE;
+      border: 1px solid $MAIN_COLOR;
+      color: $MAIN_COLOR;
+    }
+    &:hover::after{
+      border-top: 3px solid $MAIN_COLOR;
+      border-right: 3px solid $MAIN_COLOR;
+    }
+  }
+}
+// contact------------------------------
+
+// topic path
+.topicPath{
+  display: flex;
+  align-items: center;
+  margin: 20px auto 0;
+
+  &__item{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 48%;
+      right: 0;
+      transform: translateY(-50%) rotate(45deg);
+      width: 5px;
+      height: 5px;
+      border-top: 1px solid $MAIN_COLOR;
+      border-right: 1px solid $MAIN_COLOR;
+    }
+    &:first-child{
+      padding: 5px 10px 5px 0;
+    }
+    &:last-child::after{
+      display: none;
+    }
+  }
+
+  &__link{
+    text-decoration: underline;
+  }
+
 }

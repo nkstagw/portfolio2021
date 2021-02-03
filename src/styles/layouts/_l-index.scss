@@ -3,6 +3,7 @@
   position: relative;
   width: 100vw;
   height: 600px;
+  padding: 80px 0 0 0;
 
   &__item{
     width: 100vw;
@@ -102,7 +103,13 @@
 
   &__cardImg{
     max-width: 320px; 
-    @include IMG{};
+    height: 180px;
+    @include IMG{
+      display: block;
+      height: 100%;
+      margin: 0 auto; 
+      object-fit: cover;
+    }
     @include MEDIA_SP{
       margin: 0 auto; 
     }
@@ -308,45 +315,3 @@
 }
   // news------------------------------
 
-      // contact------------------------------
-.contact{
-  padding: 40px 0; 
-  background-color: $SUB_COLOR_GRAY;
-
-  &__enTtl, &__ttl{
-    text-align: center;
-  }
-  &__content{
-    margin: 20px 0 0 0; 
-  }
-
-  &__txt{
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  &__button{
-    max-width: 570px;
-    margin: 20px auto 0;
-    background-color: $MAIN_COLOR;
-    border: 1px solid $SUB_COLOR_WHITE;
-    color: $SUB_COLOR_WHITE;
-    &::after{
-      border-top: 3px solid $SUB_COLOR_WHITE;
-      border-right: 3px solid $SUB_COLOR_WHITE;
-    }
-
-    &:hover{
-      background-color: $SUB_COLOR_WHITE;
-      border: 1px solid $MAIN_COLOR;
-      color: $MAIN_COLOR;
-    }
-    &:hover::after{
-      border-top: 3px solid $MAIN_COLOR;
-      border-right: 3px solid $MAIN_COLOR;
-    }
-
-  }
-
-}
-  // contact------------------------------

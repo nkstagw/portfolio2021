@@ -22,8 +22,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
   <!-- ページ毎に読み込むCSSを変えるための部分 -->
-  <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/index.css">
-
+  <?php if ( is_home() ): ?>
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/index.css">
+  <?php endif; ?>
+  <?php if ( is_post_type_archive('works_detail') ): ?>
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/archive-works_detail.css">
+  <?php endif; ?>
+  <?php if ( is_singular('works_detail') ): ?>
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/works_detail.css">
+  <?php endif; ?>
   <!-- --------------------------------------- -->
 
   <!-- ファビコン -->
@@ -35,83 +42,80 @@
   <header class="header">
     <div class="header__container h-inner">
       <h1 class="header__logo">
-        <a href="#">
+        <a href="<?php echo esc_url(home_url()); ?>">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/AIGV.svg" alt="サイトのロゴ">
         </a>
       </h1>
     
       <nav class="header__nav">
         <ul class="header__navItems">
+
           <li class="header__navItem">
-            <a href="#" class="header__navLink has-child">制作実績</a>
+            <div class="header__navLink has-child">制作実績</div>
             <ul class="header__subItems">
+              <?php
+                $args = array(
+                  'posts_per_page' => 4, // 投稿件数の指定
+                  'post_type' => 'works_detail'// post_typeの指定
+                );
+                $the_query = new WP_Query($args); 
+                if($the_query->have_posts()):
+              ?>
+              <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
               <li class="header__subItem">
-                <a href="#">
+                <a href="<?php the_permalink(); ?>">
                   <div class="header__subImg">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                   </div>
-                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt"><?php the_title(); ?></p>
                 </a>
               </li>
-              <li class="header__subItem">
-                <a href="#">
-                  <div class="header__subImg">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
-                  </div>
-                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
-                </a>
-              </li>
-              <li class="header__subItem">
-                <a href="#">
-                  <div class="header__subImg">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
-                  </div>
-                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
-                </a>
-              </li>
-              <li class="header__subItem">
-                <a href="#">
-                  <div class="header__subImg">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
-                  </div>
-                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
-                </a>
-              </li>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+        
+              <?php else: ?>
+                <p>表示できる情報はありません。</p>
+              <?php endif; ?>
             </ul>
           </li>
+
           <li class="header__navItem">
-            <a href="#" class="header__navLink has-child">サービス</a>
+            <div class="header__navLink has-child">サービス</div>
             <ul class="header__subItems">
+            <?php
+                $args = array(
+                  'posts_per_page' => 3, // 投稿件数の指定
+                  'post_type' => 'works_detail'// post_typeの指定
+                );
+                $the_query = new WP_Query($args); 
+                if($the_query->have_posts()):
+              ?>
+              <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
               <li class="header__subItem">
-                <a href="#">
+                <a href="<?php the_permalink(); ?>">
                   <div class="header__subImg">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                   </div>
-                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
+                  <p class="header__subCnt"><?php the_title(); ?></p>
                 </a>
               </li>
-              <li class="header__subItem">
-                <a href="#">
-                  <div class="header__subImg">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
-                  </div>
-                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
-                </a>
-              </li>
-              <li class="header__subItem">
-                <a href="#">
-                  <div class="header__subImg">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="実績の写真">
-                  </div>
-                  <p class="header__subCnt">texttexttexttexttexttexttext</p>
-                </a>
-              </li>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+        
+              <?php else: ?>
+                <p>表示できる情報はありません。</p>
+              <?php endif; ?>
             </ul>
           </li>
+
           <li class="header__navItem">
             <a href="#" class="header__navLink">AIGVについて</a>
           </li>
-          <li class="header__navItem"><a href="#" class="header__navLink">お知らせ</a></li>
+
+          <li class="header__navItem">
+            <a href="#" class="header__navLink">お知らせ</a>
+          </li>
+
         </ul>
         <a href="#" class="header__contact">お問い合わせ</a>
       </nav>
@@ -130,8 +134,8 @@
         </div>
         <nav class="header__spNav">
           <ul class="header__spNavitems">
-            <li class="header__spNavitem"><a href="#" class="header__spLink">ホーム</a></li>
-            <li class="header__spNavitem"><a href="#" class="header__spLink">制作実績</a></li>
+            <li class="header__spNavitem"><a href="<?php echo esc_url(home_url()); ?>" class="header__spLink">ホーム</a></li>
+            <li class="header__spNavitem"><a href="<?php echo esc_url(home_url('works')); ?>" class="header__spLink">制作実績</a></li>
             <li class="header__spNavitem"><a href="#" class="header__spLink">サービス一覧</a></li>
             <li class="header__spNavitem"><a href="#" class="header__spLink">AIGVについて</a></li>
             <li class="header__spNavitem"><a href="#" class="header__spLink">お知らせ</a></li>

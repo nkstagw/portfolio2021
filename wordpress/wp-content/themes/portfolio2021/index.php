@@ -20,75 +20,45 @@
       </div>
       <div class="works__content">
         <div class="works__cards">
-
-          <a href="" class="works__card">
+        <?php
+          $args = array(
+            'posts_per_page' => 3, // 投稿件数の指定
+            'post_type' => 'works_detail'
+          );
+          $the_query = new WP_Query($args); 
+          if($the_query->have_posts()):
+        ?>
+        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+          <a href="<?php the_permalink(); ?>" class="works__card">
             <div class="works__cardImg">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="">
+              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="works__cardTxt">
               <table class="works__tbl">
                 <tr>
                   <td class="works__tblTtl">サイト名</td>
-                  <td class="works__tblCnt">N's house</td>
+                  <td class="works__tblCnt"><?php the_title(); ?></td>
                 </tr>
                 <tr>
                   <td class="works__tblTtl">概要</td>
-                  <td class="works__tblCnt">自己紹介サイト</td>
+                  <td class="works__tblCnt"><?php echo get_post_meta($post->ID , '概要' ,true); ?></td>
                 </tr>
                 <tr>
                   <td class="works__tblTtl">担当部分</td>
-                  <td class="works__tblCnt">デザイン、コーディング</td>
+                  <td class="works__tblCnt"><?php echo get_post_meta($post->ID , '担当部分' ,true); ?></td>
                 </tr>
               </table>
             </div>
           </a>
-
-          <a href="" class="works__card">
-            <div class="works__cardImg">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="">
-            </div>
-            <div class="works__cardTxt">
-              <table class="works__tbl">
-                <tr>
-                  <td class="works__tblTtl">サイト名</td>
-                  <td class="works__tblCnt">N's house</td>
-                </tr>
-                <tr>
-                  <td class="works__tblTtl">概要</td>
-                  <td class="works__tblCnt">自己紹介サイト</td>
-                </tr>
-                <tr>
-                  <td class="works__tblTtl">担当部分</td>
-                  <td class="works__tblCnt">デザイン、コーディング</td>
-                </tr>
-              </table>
-            </div>
-          </a>
-
-          <a href=""  class="works__card">
-            <div class="works__cardImg">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/portfolio_2020.jpg" alt="">
-            </div>
-            <div class="works__cardTxt">
-              <table class="works__tbl">
-                <tr>
-                  <td class="works__tblTtl">サイト名</td>
-                  <td class="works__tblCnt">N's house</td>
-                </tr>
-                <tr>
-                  <td class="works__tblTtl">概要</td>
-                  <td class="works__tblCnt">自己紹介サイト</td>
-                </tr>
-                <tr>
-                  <td class="works__tblTtl">担当部分</td>
-                  <td class="works__tblCnt">デザイン、コーディング</td>
-                </tr>
-              </table>
-            </div>
-          </a>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+        
+        <?php else: ?>
+          <p>表示できる情報はありません。</p>
+        <?php endif; ?>
 
           </div><!-- cards -->
-        <a href="" class="button">詳細はこちら</a>  
+        <a href="http://localhost:8000/works_detail" class="button">詳細はこちら</a>  
       </div><!-- content -->
     </div><!-- container -->
   </section>
@@ -192,28 +162,27 @@
       </div>
       <div class="news__content">
       <?php
-        $information= get_posts( array(
-        //ここで取得条件を指定する
-        'posts_per_page' => 3
-        ));
-        if($information):
+        $args = array(
+          'posts_per_page' => 3 // 投稿件数の指定
+        );
+        $the_query = new WP_Query($args); 
+        if($the_query->have_posts()):
       ?>
-      <?php
-        foreach( $information as $post ):
-        setup_postdata( $post );
-      ?>
+      <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+
         <div class="news__article">
-          <div class="news__article--date"><?php the_time('Y年n月j日'); ?></div>
+          <div class="news__article--date"><?php the_time('Y.n.j'); ?></div>
           <div class="news__article--category"><?php the_category(); ?></div>
           <a href="<?php the_permalink(); ?>" class="news__article--ttl"><?php the_title(); ?></a>
         </div>
-        <?php
-          endforeach;
-          wp_reset_postdata();
-        ?>
+
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+
         <?php else: ?>
           <p>表示できる情報はありません。</p>
         <?php endif; ?>
+
         <a href="" class="button">詳細はこちら</a>
       </div><!-- content -->
     </div><!-- container -->
