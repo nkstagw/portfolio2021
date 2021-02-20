@@ -171,7 +171,7 @@ a{
 }
 // contact------------------------------
 
-// topic path
+// topic path----------------------
 .topicPath{
   display: flex;
   align-items: center;
@@ -181,6 +181,8 @@ a{
     position: relative;
     display: inline-block;
     text-align: center;
+    height: 30px;
+    line-height: 20px;
     padding: 5px 10px;
     font-size: 1.4rem;
 
@@ -208,3 +210,63 @@ a{
   }
 
 }
+// topic path----------------------
+
+
+// kv----------------------
+.kv{
+  position: relative;
+  width: 100vw;
+  padding: 80px 0 0 0;
+  
+  &__img{
+    width: 100%;
+    height: 300px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0% 60%;
+    }
+  }
+
+  &__filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $MAIN_COLOR;
+    opacity: .6;
+  }
+
+  &__enTtl{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    font-size: 13rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    opacity: .4;
+    @include MEDIA_SP{
+      top: 38%;
+      font-size: 30vw;
+    }
+  }
+
+  &__ttl{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    color: $SUB_COLOR_WHITE;
+    letter-spacing: 0.5rem;
+    @include MEDIA_SP{
+      font-size: 15vw;
+    }
+  }
+}
+// kv----------------------

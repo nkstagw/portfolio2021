@@ -2,11 +2,11 @@
 <main>
 	<section class="fv">
 		<ul class="fv__items">
-			<li class="fv__item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/fv_1@2x.png"
+			<li class="fv__item"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fv_1@2x.png"
 					alt=""></li>
-			<li class="fv__item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/fv_2@2x.png"
+			<li class="fv__item"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fv_2@2x.png"
 					alt=""></li>
-			<li class="fv__item"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/fv_3@2x.png"
+			<li class="fv__item"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fv_3@2x.png"
 					alt=""></li>
 		</ul>
 		<div class="fv__box">
@@ -24,14 +24,17 @@
 			<div class="works__content">
 				<div class="works__cards">
 					<?php
-                    $args = array(
-                    'posts_per_page' => 3, // 投稿件数の指定
-                    'post_type' => 'works'
-                    );
-                    $the_query = new WP_Query($args); 
-                    if($the_query->have_posts()) :
-                        ?>
-					<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+					$args      = array(
+						'posts_per_page' => 3, // 投稿件数の指定
+						'post_type'      => 'works',
+					);
+					$the_query = new WP_Query( $args );
+					if ( $the_query->have_posts() ) :
+						?>
+						<?php
+						while ( $the_query->have_posts() ) :
+							$the_query->the_post();
+							?>
 					<a href="<?php the_permalink(); ?>" class="works__card">
 						<div class="works__cardImg">
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
@@ -44,19 +47,19 @@
 								</tr>
 								<tr>
 									<td class="works__tblTtl">概要</td>
-									<td class="works__tblCnt"><?php echo get_post_meta($post->ID, '概要', true); ?></td>
+									<td class="works__tblCnt"><?php echo get_post_meta( $post->ID, '概要', true ); ?></td>
 								</tr>
 								<tr>
 									<td class="works__tblTtl">担当部分</td>
-									<td class="works__tblCnt"><?php echo get_post_meta($post->ID, '担当部分', true); ?></td>
+									<td class="works__tblCnt"><?php echo get_post_meta( $post->ID, '担当部分', true ); ?></td>
 								</tr>
 							</table>
 						</div>
 					</a>
 					<?php endwhile; ?>
-					<?php wp_reset_postdata(); ?>
+						<?php wp_reset_postdata(); ?>
 
-					<?php else: ?>
+					<?php else : ?>
 					<p>表示できる情報はありません。</p>
 					<?php endif; ?>
 
@@ -87,7 +90,7 @@
 							</p>
 						</div>
 						<div class="service__cardImg">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/service_1@2x.jpg" alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/service_1@2x.jpg" alt="">
 						</div>
 					</div>
 
@@ -99,7 +102,7 @@
 							</p>
 						</div>
 						<div class="service__cardImg">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/service_2@2x.jpg" alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/service_2@2x.jpg" alt="">
 						</div>
 					</div>
 
@@ -111,7 +114,7 @@
 							</p>
 						</div>
 						<div class="service__cardImg">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/service_3@2x.jpg" alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/service_3@2x.jpg" alt="">
 						</div>
 					</div>
 
@@ -137,7 +140,7 @@
 
 					<div class="about__card">
 						<div class="about__cardImg">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/about_1.svg" alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/about_1.svg" alt="">
 						</div>
 						<h4 class=about__cardTtl>積極的な関わり</h4>
 						<p class="about__cardTxt">人や課題に対して積極的に関わっていく事で、表面的な課題だけでなく潜在化する課題に気づき解決していきます。</p>
@@ -145,7 +148,7 @@
 
 					<div class="about__card">
 						<div class="about__cardImg">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/about_2.svg" alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/about_2.svg" alt="">
 						</div>
 						<h4 class=about__cardTtl>目的達成のために</h4>
 						<p class="about__cardTxt">一般的な常識に囚われる事なく、様々な可能性をご提案し目的・目標に向かって一緒に進んでいきます。</p>
@@ -153,7 +156,7 @@
 
 					<div class="about__card">
 						<div class="about__cardImg">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/about_3.svg" alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/about_3.svg" alt="">
 						</div>
 						<h4 class=about__cardTtl>本当の価値提供</h4>
 						<p class="about__cardTxt">Webサイトを制作するだけでなく、お客様が求めている価値を見極め、先を見据えた行動から常に120％の成果を出していきます。</p>
@@ -173,24 +176,27 @@
 			</div>
 			<div class="news__content">
 				<?php
-                $args = array(
-                'posts_per_page' => 3 // 投稿件数の指定
-                );
-                $the_query = new WP_Query($args); 
-                if($the_query->have_posts()) :
-                    ?>
-				<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+				$args      = array(
+					'posts_per_page' => 3, // 投稿件数の指定
+				);
+				$the_query = new WP_Query( $args );
+				if ( $the_query->have_posts() ) :
+					?>
+					<?php
+					while ( $the_query->have_posts() ) :
+						$the_query->the_post();
+						?>
 
 				<div class="news__article">
-					<div class="news__article--date"><?php the_time('Y.n.j'); ?></div>
+					<div class="news__article--date"><?php the_time( 'Y.n.j' ); ?></div>
 					<div class="news__article--category"><?php the_category(); ?></div>
 					<a href="<?php the_permalink(); ?>" class="news__article--ttl"><?php the_title(); ?></a>
 				</div>
 
 				<?php endwhile; ?>
-				<?php wp_reset_postdata(); ?>
+					<?php wp_reset_postdata(); ?>
 
-				<?php else: ?>
+				<?php else : ?>
 				<p>表示できる情報はありません。</p>
 				<?php endif; ?>
 
