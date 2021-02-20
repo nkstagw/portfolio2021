@@ -41,9 +41,8 @@
     </div>
 
   </section>
-</main>
 
-<section class="contact">
+  <section class="contact">
     <div class="contact__container inner">
       <div class="contact__head">
         <p class="section__enTtl contact__enTtl">Contact</p>
@@ -59,5 +58,8 @@
     </div><!-- container -->
 
   </section>
+</main>
+
+
         
 <?php get_footer(); ?>

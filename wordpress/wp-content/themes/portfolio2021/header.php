@@ -25,11 +25,14 @@
   <?php if ( is_home() ): ?>
     <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/index.css">
   <?php endif; ?>
-  <?php if ( is_post_type_archive('works_detail') ): ?>
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/archive-works_detail.css">
+  <?php if ( is_post_type_archive('works') ): ?>
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/archive-works.css">
   <?php endif; ?>
-  <?php if ( is_singular('works_detail') ): ?>
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/works_detail.css">
+  <?php if ( is_singular('works') ): ?>
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/single-works.css">
+  <?php endif; ?>
+  <?php if ( is_page('about') ): ?>
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/about.css">
   <?php endif; ?>
   <!-- --------------------------------------- -->
 
@@ -56,7 +59,7 @@
               <?php
                 $args = array(
                   'posts_per_page' => 4, // 投稿件数の指定
-                  'post_type' => 'works_detail'// post_typeの指定
+                  'post_type' => 'works'// post_typeの指定
                 );
                 $the_query = new WP_Query($args); 
                 if($the_query->have_posts()):
@@ -82,10 +85,10 @@
           <li class="header__navItem">
             <div class="header__navLink has-child">サービス</div>
             <ul class="header__subItems">
-            <?php
+              <?php
                 $args = array(
                   'posts_per_page' => 3, // 投稿件数の指定
-                  'post_type' => 'works_detail'// post_typeの指定
+                  'post_type' => 'works'// post_typeの指定
                 );
                 $the_query = new WP_Query($args); 
                 if($the_query->have_posts()):
@@ -109,7 +112,7 @@
           </li>
 
           <li class="header__navItem">
-            <a href="#" class="header__navLink">AIGVについて</a>
+            <a href="<?php echo esc_url(home_url('about')); ?>" class="header__navLink">AIGVについて</a>
           </li>
 
           <li class="header__navItem">
@@ -137,7 +140,7 @@
             <li class="header__spNavitem"><a href="<?php echo esc_url(home_url()); ?>" class="header__spLink">ホーム</a></li>
             <li class="header__spNavitem"><a href="<?php echo esc_url(home_url('works')); ?>" class="header__spLink">制作実績</a></li>
             <li class="header__spNavitem"><a href="#" class="header__spLink">サービス一覧</a></li>
-            <li class="header__spNavitem"><a href="#" class="header__spLink">AIGVについて</a></li>
+            <li class="header__spNavitem"><a href="<?php echo esc_url(home_url('about')); ?>" class="header__spLink">AIGVについて</a></li>
             <li class="header__spNavitem"><a href="#" class="header__spLink">お知らせ</a></li>
             <li class="header__spNavitem"><a href="#" class="header__spLink">サイトマップ</a></li>
             <li class="header__spNavitem"><a href="#" class="header__spLink">プライバシーポリシー</a></li>
