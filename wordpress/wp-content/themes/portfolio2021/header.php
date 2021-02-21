@@ -109,7 +109,7 @@
 					</li>
 
 					<li class="header__navItem">
-						<a href="#" class="header__navLink">お知らせ</a>
+						<a href="<?php echo esc_url( home_url( 'news' ) ); ?>" class="header__navLink">お知らせ</a>
 					</li>
 
 				</ul>

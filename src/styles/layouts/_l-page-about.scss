@@ -20,10 +20,6 @@
 	.value{
 		padding: 40px 0;
 
-		&__content{
-
-		}
-
 		&__card{
 			display: flex;
 			justify-content: space-between;
@@ -69,6 +65,44 @@
 				object-fit: contain;
 			}
 		}
+	}
 
+	.outline{
+		padding: 40px 0;
+		&__content{
+			max-width: 570px;
+			margin: 20px auto 0; 
+		}
+
+		&__cntBox{
+			display: flex;
+			height: 80px;
+			line-height: 80px;
+			border-bottom: 2px solid #707070;
+			&:last-child{
+				height: 124px;
+			}
+		}
+
+		&__cntTtl{
+			max-width: 140px;
+			width: 25%;
+			font-size: 1.8rem;
+			&--last{
+				@extend .outline__cntTtl;
+				line-height: 124px;
+			}
+		}
+
+		&__cntItem{
+			max-width: calc(570px - 140px);
+			width: 75%;
+			font-size: 1.6rem;
+			&--last{
+				@extend .outline__cntItem;
+				padding-top: 25px;
+				line-height: 1.5;
+			}
+		}
 	}
 }
