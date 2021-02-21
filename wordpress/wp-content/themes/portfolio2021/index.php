@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+<main class="index">
 	<section class="fv">
 		<ul class="fv__items">
 			<li class="fv__item"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fv_1@2x.png"
@@ -37,7 +37,7 @@
 							?>
 					<a href="<?php the_permalink(); ?>" class="works__card">
 						<div class="works__cardImg">
-							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+							<img src="<?php echo esc_url( get_the_post_thumbnail_url() ); ?>" alt="">
 						</div>
 						<div class="works__cardTxt">
 							<table class="works__tbl">
@@ -47,11 +47,11 @@
 								</tr>
 								<tr>
 									<td class="works__tblTtl">概要</td>
-									<td class="works__tblCnt"><?php echo get_post_meta( $post->ID, '概要', true ); ?></td>
+									<td class="works__tblCnt"><?php echo esc_html( get_post_meta( $post->ID, '概要', true ) ); ?></td>
 								</tr>
 								<tr>
 									<td class="works__tblTtl">担当部分</td>
-									<td class="works__tblCnt"><?php echo get_post_meta( $post->ID, '担当部分', true ); ?></td>
+									<td class="works__tblCnt"><?php echo esc_html( get_post_meta( $post->ID, '担当部分', true ) ); ?></td>
 								</tr>
 							</table>
 						</div>
@@ -64,7 +64,7 @@
 					<?php endif; ?>
 
 				</div><!-- cards -->
-				<a href="http://localhost:8000/works_detail" class="button">詳細はこちら</a>
+				<a href="<?php echo esc_url( home_url( 'works' ) ); ?>" class="button">詳細はこちら</a>
 			</div><!-- content -->
 		</div><!-- container -->
 	</section>

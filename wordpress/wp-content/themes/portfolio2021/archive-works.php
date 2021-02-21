@@ -7,7 +7,7 @@
 ?>
 <?php get_header(); ?>
 
-<main>
+<main class="archive-works">
 	<section class="kv">
 		<div class="kv__img">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fv_3@2x.png" alt="">
