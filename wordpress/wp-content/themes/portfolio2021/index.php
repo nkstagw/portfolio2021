@@ -1,3 +1,11 @@
+<?php
+/**
+ *
+ * @package WordPress
+ */
+
+?>
+
 <?php get_header(); ?>
 <main class="index">
 	<article>
