@@ -77,7 +77,7 @@
 
 						<input type="checkbox" name="<?php echo esc_html( $category->slug ); ?>"
 							id="<?php echo esc_html( $category->slug ); ?>" class="category__check"
-								<?php echo esc_html( $this_page ); ?> disabled>
+							<?php echo esc_html( $this_page ); ?> disabled>
 						<label for="<?php echo esc_html( $category->slug ); ?>" class="category__label"><a
 								href="<?php echo esc_html( get_category_link( $category->term_id ) ); ?>"><?php echo esc_html( $category->name ); ?></a></label>
 						<?php endforeach; ?>
@@ -94,9 +94,9 @@
 					<!-- カテゴリページの時、カテゴリ名を取得 -->
 
 					<?php
-					$nowpaged  = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+					$paged     = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 					$args      = array(
-						'paged'          => $nowpaged,
+						'paged'          => $paged,
 						'posts_per_page' => 10, // 投稿件数の指定(-1で全て)
 						'category_name'  => $category_slug,
 					);
