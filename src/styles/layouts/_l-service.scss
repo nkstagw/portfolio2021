@@ -1,0 +1,57 @@
+.page-service{
+	.service{
+		padding: 40px 0;
+
+		&__content{
+
+		}
+
+		&__cards{
+			display: flex;
+			margin-top: 40px;
+		}
+
+		&__card{
+			position: relative;
+			width: calc(100% / 3);
+			padding: 40px;
+			border: 1px solid $MAIN_COLOR;
+			text-align: center;
+
+			&:nth-child(2){
+				border-left: none;
+				border-right: none;
+			}
+		}
+
+		.card{
+			&__img{
+				width: 100%;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			&__ttl{
+				font-size: 2.4rem;
+				color: $MAIN_COLOR;
+				font-weight: bold;
+				margin-top: 20px;
+			}
+
+			&__content{
+				height: 110px;
+				margin-top: 20px;
+				font-size: 1.4rem;
+				text-align: left;
+				line-height: calc(30 / 14);
+			}
+
+			&__button{
+				width: 100%;
+				margin-top: 40px;
+			}
+		}
+	}
+}

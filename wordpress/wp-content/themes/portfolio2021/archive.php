@@ -78,8 +78,9 @@
 						<input type="checkbox" name="<?php echo esc_html( $category->slug ); ?>"
 							id="<?php echo esc_html( $category->slug ); ?>" class="category__check"
 							<?php echo esc_html( $this_page ); ?> disabled>
-						<label for="<?php echo esc_html( $category->slug ); ?>" class="category__label"><a
-								href="<?php echo esc_html( get_category_link( $category->term_id ) ); ?>"><?php echo esc_html( $category->name ); ?></a></label>
+						<label for="<?php echo esc_html( $category->slug ); ?>" class="category__label">
+							<a href="<?php echo esc_html( get_category_link( $category->term_id ) ); ?>"><?php echo esc_html( $category->name ); ?></a>
+						</label>
 						<?php endforeach; ?>
 						<!-- ループ処理終了-->
 
