@@ -59,16 +59,57 @@
 					<ul class="outline__cards">
 						<li class="outline__card card">
 							<div class="card__content">
-								<h4 class="card__ttl"></h4>
-								<p class="card__txt"></p>
+								<h4 class="card__ttl">1）詳細なヒアリングでお客様の希望の形に</h4>
+								<p class="card__txt">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
 							</div>
 							<div class="card__img">
-								<img src="" alt="">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/s-outline-hearing@2x.png" alt="">
 							</div>
 						</li>
-						<li class="outline__card"></li>
+
+						<li class="outline__card card">
+							<div class="card__content">
+								<h4 class="card__ttl">2）柔軟なご提案でお客様にあったご提案を</h4>
+								<p class="card__txt">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+							</div>
+							<div class="card__img">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/s-outline-advice@2x.png" alt="">
+							</div>
+						</li>
 					</ul>
 				</div>
+			</div>
+		</section>
+
+		<section class="flow">
+			<div class="flow__container inner">
+				<div class="section__head">
+					<p class="section__enTtl">Service Flow</p>
+					<h3 class="section__ttl">制作の流れ</h3>
+				</div>
+				<ul class="flow__cards">
+					<li class="flow__card card">
+						<div class="card__img">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/flow-hearing.svg" alt="">
+						</div>
+						<div class="card__content">
+							<h4 class="card__ttl">ヒアリング</h4>
+							<p class="card__txt">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
+						</div>
+					</li>
+
+				</ul>
+
+			</div>
+		</section>
+
+		<section class="price">
+			<div class="price__container inner">
+				<div class="section__head">
+					<p class="section__enTtl">Price</p>
+					<h3 class="section__ttl">価格</h3>
+				</div>
+
 			</div>
 		</section>
 

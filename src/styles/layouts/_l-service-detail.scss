@@ -92,6 +92,68 @@
 	}
 
 	.outline{
-		
+		padding: 40px 0;
+		&__card{
+			display: flex;
+			margin-top: 40px;
+		}
+		.card{
+			&__ttl{
+				font-size: 2.2rem;
+				line-height: calc(48 / 22);
+			}
+
+			&__txt{
+				font-size: 1.4rem;
+				line-height: calc(30 / 14);
+			}
+
+			&__img{
+				max-width: 520px;
+			}
+		}
+	}
+
+	.flow{
+		margin-top: 40px;
+		&__container{
+
+		}
+
+		&__cards{
+			display: flex;
+			padding: 40px 20px;
+		}
+
+		&__card{
+			width: calc(100% / 4);
+		}
+
+		.card{
+			&__img{
+				width: 150px;
+				height: 150px;
+				margin: 0 auto; 
+
+			}
+
+			&__content{
+
+			}
+
+			&__ttl{
+				margin-top: 10px;
+				text-align: center;
+				font-size: 2rem;
+				color: $MAIN_COLOR;
+			}
+
+			&__txt{
+				margin-top: 20px;
+				font-size: 1.4rem;
+				line-height: calc(30 / 14);
+			}
+
+		}
 	}
 }
