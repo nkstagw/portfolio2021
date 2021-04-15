@@ -2,14 +2,26 @@
 * @file _media.scss
 **/
 
-@mixin MEDIA_SP {
-  @media screen and ( max-width: #{$MEDIA_SP} ) {
+@mixin media-tab-pro {
+  @media screen and (max-width: #{$media-tab-pro}) {
     @content;
   }
 }
 
-@mixin MEDIA_TAB {
-  @media screen and ( max-width: #{$MEDIA_TAB} ) {
+@mixin media-tab {
+  @media screen and (max-width: #{$media-tab}) {
+    @content;
+  }
+}
+
+@mixin media-sp-plus {
+  @media screen and (max-width: #{$media-sp-plus}) {
+    @content;
+  }
+}
+
+@mixin media-sp {
+  @media screen and (max-width: #{$media-sp}) {
     @content;
   }
 }

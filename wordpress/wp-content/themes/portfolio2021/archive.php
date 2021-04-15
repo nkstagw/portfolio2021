@@ -45,9 +45,9 @@
 					<div class="news__category category">
 
 						<span class="category__ttl">種別</span>
-
-						<!-- カテゴリ一覧情報の取得 -->
-						<?php
+						<ul class="category__lists">
+							<!-- カテゴリ一覧情報の取得 -->
+							<?php
 							// 親カテゴリーのものだけを一覧で取得
 							$args       = array(
 								'parent'  => 0,
@@ -56,34 +56,39 @@
 							);
 							$categories = get_categories( $args );
 							?>
-						<!-- ここからループ処理開始(カテゴリー一覧) -->
-						<?php foreach ( $categories as $category ) : ?>
-						<!-- カテゴリーアーカイブページに遷移した時、カテゴリー名にアンダーバーをつけるための条件分岐 -->
-							<?php if ( is_archive() ) : ?>
-						<!-- 今いるページのカテゴリ情報、カテゴリIDを取得 -->
-								<?php
-								$category_info = get_the_category();
-								$category_id   = $category_info[0]->term_id;
-								?>
-								<?php if ( $category->term_id === $category_id ) : ?>
-									<?php $this_page = 'checked'; ?>
-						<?php else : ?>
-							<?php $this_page = ''; ?>
-						<?php endif; ?>
+							<!-- ここからループ処理開始(カテゴリー一覧) -->
+							<?php foreach ( $categories as $category ) : ?>
+							<!-- カテゴリーアーカイブページに遷移した時、カテゴリー名にcheckをつけるための条件分岐 -->
+								<?php if ( is_archive() ) : ?>
+							<!-- 今いるページのカテゴリ情報、カテゴリIDを取得 -->
+									<?php
+									$category_info = get_the_category();
+									$category_id   = $category_info[0]->term_id;
+									?>
+									<?php if ( $category->term_id === $category_id ) : ?>
+										<?php $this_page = 'checked'; ?>
+							<?php else : ?>
+								<?php $this_page = ''; ?>
+							<?php endif; ?>
 
-						<?php else : ?>
-						<?php endif; ?>
-						<!-- 今いるページカテゴリIDと各カテゴリIDが同じならcheckedを付与 -->
+							<?php else : ?>
+							<?php endif; ?>
+							<!-- 今いるページカテゴリIDと各カテゴリIDが同じならcheckedを付与 -->
 
-						<input type="checkbox" name="<?php echo esc_html( $category->slug ); ?>"
-							id="<?php echo esc_html( $category->slug ); ?>" class="category__check"
-							<?php echo esc_html( $this_page ); ?> disabled>
-						<label for="<?php echo esc_html( $category->slug ); ?>" class="category__label">
-							<a href="<?php echo esc_html( get_category_link( $category->term_id ) ); ?>"><?php echo esc_html( $category->name ); ?></a>
-						</label>
-						<?php endforeach; ?>
-						<!-- ループ処理終了-->
+							<li class="category__list">
+	
+								<input type="checkbox" name="<?php echo esc_html( $category->slug ); ?>"
+									id="<?php echo esc_html( $category->slug ); ?>" class="category__check"
+									<?php echo esc_html( $this_page ); ?> disabled>
+								<label for="<?php echo esc_html( $category->slug ); ?>" class="category__label">
+									<a href="<?php echo esc_html( get_category_link( $category->term_id ) ); ?>"
+										class="category__link"><?php echo esc_html( $category->name ); ?></a>
+								</label>
+							</li>
 
+							<?php endforeach; ?>
+							<!-- ループ処理終了-->
+						</ul>
 					</div>
 					<!-- カテゴリページの時、カテゴリ名を取得 -->
 					<?php if ( is_archive() ) : ?>

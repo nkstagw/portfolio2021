@@ -26,7 +26,7 @@
 			background-color: rgba(253, 253, 251,.7);
 			border: 1px solid $MAIN_COLOR;
 
-			@include MEDIA_TAB{
+			@include media-tab{
 				top: 70%;
 				width: 95%;
 				padding: 10px 0;
@@ -38,10 +38,10 @@
 			color: $MAIN_COLOR;
 			text-align: center;
 			text-shadow: 0 3px 6px rgba(0, 0, 0,.16);
-			@include MEDIA_TAB{
+			@include media-tab{
 				font-size: 4vw;
 			}
-			@include MEDIA_SP{
+			@include media-sp{
 				font-size: 7vw;
 			}
 		}
@@ -51,10 +51,10 @@
 			color:$FONT_COLOR;
 			text-align: center;
 			letter-spacing: 0.1rem;
-			@include MEDIA_TAB{
+			@include media-tab{
 				font-size: 4vw;
 			}
-			@include MEDIA_SP{
+			@include media-sp{
 				font-size: 5vw;
 			}
 		}
@@ -73,7 +73,7 @@
 			display: flex;
 			justify-content: space-between;
 
-			@include MEDIA_SP{
+			@include media-sp{
 				display: block;
 			}
 		}
@@ -90,7 +90,7 @@
 				transition: all 0.5s;
 			}
 
-			@include MEDIA_SP{
+			@include media-sp{
 				width: 100%;
 				box-shadow: none;
 				margin: 20px 0 0 0;
@@ -111,7 +111,7 @@
 				margin: 0 auto; 
 				object-fit: cover;
 			}
-			@include MEDIA_SP{
+			@include media-sp{
 				margin: 0 auto; 
 			}
 		}
@@ -159,7 +159,7 @@
 			&:first-child{
 				margin: 0 0 0 0;
 			}
-			@include MEDIA_SP{
+			@include media-sp{
 				flex-direction: column-reverse;
 				padding: 20px 10px;
 			}
@@ -171,7 +171,7 @@
 
 		&__cardTtl{
 			font-size: 2.5rem;
-			@include MEDIA_SP{
+			@include media-sp{
 				margin: 20px 0 0 0 ;
 			}
 		}
@@ -180,7 +180,7 @@
 			line-height: calc(30/14);
 			margin: 40px 0 0 0; 
 			font-size: 1.4rem;
-			@include MEDIA_SP{
+			@include media-sp{
 				margin: 20px 0 0 0 ;
 			}
 		}
@@ -189,7 +189,7 @@
 			max-width: 350px; 
 			margin: 0 0 0 40px; 
 			@include IMG{};
-			@include MEDIA_SP{
+			@include media-sp{
 				margin: 0 auto;
 			}
 		}
@@ -207,7 +207,7 @@
 		&__cards{
 			display: flex;
 			justify-content: space-between;
-			@include MEDIA_SP{
+			@include media-sp{
 				display: block;
 			}
 		}
@@ -217,7 +217,7 @@
 			padding: 20px 20px 40px 20px;
 			border: 1px solid $MAIN_COLOR;
 			border-radius: 5px;
-			@include MEDIA_SP{
+			@include media-sp{
 				width: 100%;
 				margin: 40px 0 0 0;
 				&:first-child{
@@ -262,7 +262,7 @@
 			padding: 20px 0;
 			border-top: 1px solid $SUB_COLOR_GRAY;
 			border-bottom: 1px solid $SUB_COLOR_GRAY;
-			@include MEDIA_SP{
+			@include media-sp{
 				display: block;
 			}
 
@@ -271,7 +271,7 @@
 				width: 15%;
 				font-size: 1.8rem;
 				font-weight: bold;
-				@include MEDIA_SP{
+				@include media-sp{
 					display: inline-block;
 					width: 30%;
 					font-size: 1.4rem;
@@ -286,7 +286,7 @@
 				background-color: $SUB_COLOR_GRAY;
 				font-size: 1.2rem;
 				text-align: center;
-				@include MEDIA_SP{
+				@include media-sp{
 					display: inline-block;
 					max-width: 100px;
 					width: 30%;
@@ -306,7 +306,7 @@
 				overflow: hidden;
 				text-overflow: ellipsis;
 				white-space: nowrap;
-				@include MEDIA_SP{
+				@include media-sp{
 					width: 100%;
 					margin: 10px 0 0 0; 
 					font-size: 1.4rem;

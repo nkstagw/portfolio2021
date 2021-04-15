@@ -29,7 +29,7 @@
 
 		<section class="topTxt">
 			<div class="topTxt__container inner">
-				<h2 class="topTxt__ttl">あなたにとっての「良い意味でお節介な人」を目指して</h2>
+				<h2 class="topTxt__ttl">あなたにとっての<br class="is-sp"> 「良い意味でお節介な人」<br class="is-sp">を目指して</h2>
 				<p class="topTxt__txt">
 					AIGVではお客様にとって一番「お節介な人」になる事を目指して活動しております。事業において人や課題に自ら積極的に関わり、その課題解決に向けて全力で取り組む事を大切にしております。ただのお節介ではなくお客様にとって「良い意味でお節介な人」を目指して様々な活動をしております。
 				</p>

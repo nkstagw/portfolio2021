@@ -24,7 +24,7 @@
 
   &__nav{
   display: flex ;
-  @include MEDIA_SP{
+  @include media-sp{
     display: none;
   }
   }
@@ -133,7 +133,7 @@
     width: 40px;
     height: 30px;
 
-    @include MEDIA_SP{
+    @include media-sp{
       display: block;
     }
   }
