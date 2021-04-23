@@ -137,24 +137,4 @@
 			</div>
 		</section>
 
-
-		<div class="contact">
-			<div class="contact__container inner">
-				<div class="contact__head">
-					<p class="section__enTtl contact__enTtl">Contact</p>
-					<h3 class="section__ttl contact__ttl">お問い合わせ</h3>
-				</div>
-				<div class="contact__content">
-					<p class="contact__txt">
-						サービスなどに関するお問い合わせは下記フォームよりお願いいたします。<br class="br-pc">
-						またTwitterのDMからのお問い合わせも可能です。
-					</p>
-					<a href="" class="button contact__button">お問い合わせはこちら</a>
-				</div><!-- content -->
-			</div><!-- container -->
-		</div>
-
-	</article>
-</main>
-
 <?php get_footer(); ?>

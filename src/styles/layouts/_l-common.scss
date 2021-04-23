@@ -8,6 +8,10 @@ a{
   color: $FONT_COLOR;
 }
 
+input[type="radio"]{
+	display: none;
+}
+
 // br------------------------------
 .br-pc{
   display: block;
@@ -271,3 +275,18 @@ a{
   }
 }
 // kv----------------------
+
+// 最大幅より小さくなった場合の両端に余白を作る
+.content-width {
+  max-width: $content-width;
+  margin: auto;
+}
+
+// 画面横の余白を作成
+.content-padding {
+  padding: 0 35px;
+
+  @include media-tab {
+    padding: 0 30px;
+  }
+}

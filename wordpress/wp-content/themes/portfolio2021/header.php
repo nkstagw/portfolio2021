@@ -113,7 +113,7 @@
 					</li>
 
 				</ul>
-				<a href="#" class="header__contact">お問い合わせ</a>
+				<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="header__contact">お問い合わせ</a>
 			</nav>
 
 			<label for="hamburger" class="header__hamburger">

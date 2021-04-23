@@ -43,7 +43,7 @@
 							</div>
 							<h4 class="card__ttl">Webサイト・LP制作</h4>
 							<p class="card__content">新規の顧客獲得や事業の周知などお客様の目的や課題に沿ったWebサイト・ランディングページの制作を行います。</p>
-							<a href="#" class="button contact__button card__button">詳しくはこちら</a>
+							<a href="<?php echo esc_url( get_permalink() ); ?>web_lp" class="button contact__button card__button">詳しくはこちら</a>
 						</li>
 
 						<li class="service__card card">
@@ -52,7 +52,7 @@
 							</div>
 							<h4 class="card__ttl">WordPress実装</h4>
 							<p class="card__content">最新情報のお知らせや商品の紹介など頻繁に更新が必要なWebサイトについては「WordPress」での実装いたします。</p>
-							<a href="#" class="button contact__button card__button">詳しくはこちら</a>
+							<a href="<?php echo esc_url( get_permalink() ); ?>wordpress" class="button contact__button card__button">詳しくはこちら</a>
 						</li>
 
 						<li class="service__card card">
@@ -61,7 +61,7 @@
 							</div>
 							<h4 class="card__ttl">Web制作　外注パートナー</h4>
 							<p class="card__content">Web制作の外注パートナーとしての活動も行なっております。ただの作業者ではなく自分から提供できる価値は何か」を常に考えていきます。</p>
-							<a href="#" class="button contact__button card__button">詳しくはこちら</a>
+							<a href="<?php echo esc_url( get_permalink() ); ?>partner" class="button contact__button card__button">詳しくはこちら</a>
 						</li>
 					</ul>
 				</div>
@@ -69,22 +69,4 @@
 
 		</section>
 
-		<section class="contact">
-			<div class="contact__container inner">
-				<div class="contact__head">
-					<p class="section__enTtl contact__enTtl">Contact</p>
-					<h3 class="section__ttl contact__ttl">お問い合わせ</h3>
-				</div>
-				<div class="contact__content">
-					<p class="contact__txt">
-						サービスなどに関するお問い合わせは下記フォームよりお願いいたします。<br class="br-pc">
-						またTwitterのDMからのお問い合わせも可能です。
-					</p>
-					<a href="" class="button contact__button">お問い合わせはこちら</a>
-				</div><!-- content -->
-			</div><!-- container -->
-
-		</section>
-	</article>
-</main>
 <?php get_footer(); ?>

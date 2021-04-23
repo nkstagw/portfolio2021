@@ -46,4 +46,25 @@ $(function () {
 		]
   });
 
+		//tab部分の実装
+$('.form__tabItem').click(function () {
+	if($(this).hasClass('is-active')){
+	}
+	else{
+		$('.form__tabItem').removeClass('is-active');
+		$(this).addClass('is-active');
+	}
+	var id_check = $(this).attr('data-tab');
+	var id = `#${id_check}`;
+	const checkStatus = $(id).hasClass('is-active');
+	if(checkStatus){
+		
+	}
+	else{
+		$('.form__cntItem').removeClass('is-active');
+		$(id).addClass('is-active');
+	}
+	});
+
+
 });
