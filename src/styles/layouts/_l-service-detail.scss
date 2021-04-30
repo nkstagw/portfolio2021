@@ -276,6 +276,7 @@
 			padding: 40px 95px;
 			@include media-tab{
 				flex-direction: column;
+				padding: 20px 25px;
 			}
 		}
 
@@ -288,6 +289,9 @@
 
 			&:first-of-type{
 				margin-right: 190px;
+				@include media-tab{
+					margin-right: 0;
+				}
 			}
 
 		}
@@ -306,6 +310,10 @@
 				color: $MAIN_COLOR;
 				font-weight: bold;
 				margin-top: 20px;
+				
+				@include media-tab{
+					font-size: 1.8rem;
+				}
 			}
 
 			&__content{

@@ -172,7 +172,7 @@
     z-index: $index_max;
     display: none;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding: 20px 0;
     background-color: $FONT_COLOR;
     opacity: 0;

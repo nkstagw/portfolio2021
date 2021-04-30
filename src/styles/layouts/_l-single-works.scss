@@ -1,4 +1,10 @@
 .single-works{
+	a{
+		text-decoration: underline;
+	}
+	.button{
+		text-decoration: none;
+	}
 	.kv{
 		height: 200px;
 		line-height: 120px;
@@ -14,10 +20,8 @@
 		}
 	}
 	.worksdetail{
-		padding: 40px 0 0 0;
-		&__container{
+		padding: 40px 0 ;
 
-		}
 		&__Img{
 			max-width: 800px;
 			height: 495px;
@@ -41,12 +45,19 @@
 
 		&__tblTtl{
 				font-size: 1.6rem;
+
+				@include media-sp{
+					font-size: 1.4rem;
+				}
 		}
 
 		&__tblCnt{
 			display: inline-block;
 			margin:0 0 0 30px  ;
 			font-size: 1.6rem;
+			@include media-sp{
+				font-size: 1.4rem;
+			}
 		}
 
 		&__link{
@@ -56,7 +67,10 @@
 		&__txt{
 			line-height: calc(30/14);
 			margin: 40px 0 0 0; 
-			font-size: 1.4rem;
+			font-size: 1.6rem;
+			@include media-sp{
+				font-size: 1.4rem;
+			}
 		}
 	}
 

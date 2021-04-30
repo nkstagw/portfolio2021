@@ -176,6 +176,14 @@
 
 				<li class="anotherlink__card card">
 					<div class="card__img">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/partner@2x.png" alt="">
+					</div>
+					<h4 class="card__ttl">Web制作　外注パートナー</h4>
+					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/partner" class="button contact__button card__button">詳しくはこちら</a>
+				</li>
+
+				<li class="anotherlink__card card">
+					<div class="card__img">
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/wordpress@2x.png" alt="">
 					</div>
 					<h4 class="card__ttl">WordPress実装</h4>
@@ -183,13 +191,6 @@
 						class="button contact__button card__button">詳しくはこちら</a>
 				</li>
 
-				<li class="anotherlink__card card">
-					<div class="card__img">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/partner@2x.png" alt="">
-					</div>
-					<h4 class="card__ttl">Web制作　外注パートナー</h4>
-					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/partner" class="button contact__button card__button">詳しくはこちら</a>
-				</li>
 			</ul>
 		</section>
 

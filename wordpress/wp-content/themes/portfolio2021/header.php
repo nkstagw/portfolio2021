@@ -50,7 +50,7 @@
 						$service_is_page = 'is-page';
 					} elseif ( strstr( $url, 'about' ) ) {
 						$about_is_page = 'is-page';
-					} elseif ( strstr( $url, 'news' ) || strstr( $url, 'category' ) ) {
+					} elseif ( strstr( $url, 'news' ) || strstr( $url, 'category' ) || is_single('')) {
 						$news_is_page = 'is-page';
 					}
 					?>

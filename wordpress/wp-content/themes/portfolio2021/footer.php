@@ -40,24 +40,24 @@
 
 		<nav class="footer__nav">
 			<ul class="footer__navItems">
-				<li class="footer__navItem"><a href="" class="footer__link">ホーム</a></li>
-				<li class="footer__navItem"><a href="" class="footer__link">制作実績</a></li>
-				<li class="footer__navItem">
-					<a href="" class="footer__link">サービス</a>
-					<ul class="footer__subItems">
-						<li class="footer__subItem"><a href="" class="footer__subLink">ー Webサイト・LP制作</a></li>
-						<li class="footer__subItem"><a href="" class="footer__subLink">ー WordPress実装</a></li>
-						<li class="footer__subItem"><a href="" class="footer__subLink">ー Web制作外注パートナー</a></li>
-					</ul>
+				<li class="footer__navItem"><a href="<?php echo esc_url( home_url() ); ?>" class="footer__link">ホーム</a></li>
+				<li class="footer__navItem"><a href="<?php echo esc_url( home_url( 'works/' ) ); ?>" class="footer__link">制作実績</a>
 				</li>
 				<li class="footer__navItem">
-					<a href="" class="footer__link">AIGVについて</a>
+					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>" class="footer__link">サービス</a>
 					<ul class="footer__subItems">
-						<li class="footer__subItem"><a href="" class="footer__subLink">ー 私たちの強み</a></li>
-						<li class="footer__subItem"><a href="" class="footer__subLink">ー 概要</a></li>
+						<li class="footer__subItem"><a href="<?php echo esc_url( home_url( 'service/partner' ) ); ?>"
+								class="footer__subLink">ー Web制作外注パートナー</a></li>
+						<li class="footer__subItem"><a href="<?php echo esc_url( home_url( 'service/wordpress' ) ); ?>"
+								class="footer__subLink">ー WordPress実装</a></li>
+						<li class="footer__subItem"><a href="<?php echo esc_url( home_url( 'service/web_lp' ) ); ?>"
+								class="footer__subLink">ー Webサイト・LP制作</a></li>
 					</ul>
 				</li>
-				<li class="footer__navItem"><a href="" class="footer__link">お知らせ</a></li>
+				<li class="footer__navItem"><a href="<?php echo esc_url( home_url( 'about/' ) ); ?>"
+						class="footer__link">AIGVについて</a></li>
+				<li class="footer__navItem"><a href="<?php echo esc_url( home_url( 'news/' ) ); ?>" class="footer__link">お知らせ</a>
+				</li>
 			</ul>
 		</nav>
 	</div>

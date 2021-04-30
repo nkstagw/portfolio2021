@@ -179,19 +179,20 @@
 
 				<li class="anotherlink__card card">
 					<div class="card__img">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/wordpress@2x.png" alt="">
+					</div>
+					<h4 class="card__ttl">WordPress実装</h4>
+					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/wordpress" class="button contact__button card__button">詳しくはこちら</a>
+				</li>
+
+				<li class="anotherlink__card card">
+					<div class="card__img">
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/web_lp@2x.png" alt="">
 					</div>
 					<h4 class="card__ttl">Webサイト・LP制作</h4>
 					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/web_lp" class="button contact__button card__button">詳しくはこちら</a>
 				</li>
 
-				<li class="anotherlink__card card">
-					<div class="card__img">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/wordpress@2x.png" alt="">
-					</div>
-					<h4 class="card__ttl">WordPress実装</h4>
-					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/wordpress" class="button contact__button card__button">詳しくはこちら</a>
-				</li>
 			</ul>
 		</section>
 

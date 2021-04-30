@@ -13,9 +13,6 @@
 	<article>
 		<section class="article content-padding">
 			<div class="content-width">
-				<div class="article__img">
-					<img src="<?php echo esc_html( get_the_post_thumbnail_url() ); ?>" alt="<?php the_title(); ?>">
-				</div>
 				<div class="article__info">
 					<span class="article__info-category"><?php the_category(); ?></span>
 					<span class="article__info-date"><?php the_time( 'Y.m.d' ); ?></span>

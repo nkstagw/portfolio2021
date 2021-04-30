@@ -79,7 +79,7 @@
 					</li>
 					<!-- tabの中身 2つ目 -->
 					<li id="twitter" class="form__cntItem">
-						<a href="https://twitter.com/nk_Nshouse" class="twitter__link">Twitter DMはこちらからお問い合わせください</a>
+						<a href="https://twitter.com/nk_Nshouse" class="twitter__link" target="_blank" rel="noopener noreferrer">Twitter DMはこちらからお問い合わせください</a>
 					</li>
 				</ul>
 			</div>
