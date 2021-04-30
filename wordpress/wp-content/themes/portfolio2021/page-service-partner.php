@@ -29,12 +29,11 @@
 
 		<section class="problem">
 			<div class="problem__container inner">
-				<h3 class="problem__ttl">Webサイト制作における課題を解決します</h3>
+				<h3 class="problem__ttl">ただ作業するだけではない、本当に信頼できるパートナーとして</h3>
 				<ul class="problem__lists">
-					<li class="problem__list">・Webサイト・LPを作りたいけど分からない事が多く自分では作る事ができない…</li>
-					<li class="problem__list">・Webサイト作成ツールを使って自分で作ってみたけど他のサイトと同じような感じになってしまう…</li>
-					<li class="problem__list">・Webサイト・LPを作成したいけど、どのような流れで進めていけば良いか分からない…</li>
-					<li class="problem__list">・なるべくコストをかけずにWebサイト・LPを制作したい。</li>
+					<li class="problem__list">・手元に案件が多くあり手が回らない…</li>
+					<li class="problem__list">・外注を検討しているが信頼できるパートナーがなかなかいない…</li>
+					<li class="problem__list">・外注をしたいが制作物の品質がわからず不安…</li>
 				</ul>
 			</div>
 		</section>
@@ -43,8 +42,8 @@
 			<div class="points__container inner">
 				<h4 class="points__ttl">このサービスのポイント</h4>
 				<ul class="points__lists">
-					<li class="points__list">詳細なヒアリングを行いお客様のご希望について、イメージを共有しながら進めていきます。</li>
-					<li class="points__list">お客様のご予算などに合わせて、最適に方法をご提案いたします</li>
+					<li class="points__list">クライアント様にまず品質を確認いただいた上で、依頼するかどうかを選択する事が可能</li>
+					<li class="points__list">こまめな連絡と納期順守を徹底し、クライアント様に安心していただけるパートナーを目指します。</li>
 				</ul>
 			</div>
 		</section>
@@ -59,26 +58,26 @@
 					<ul class="outline__cards">
 						<li class="outline__card card">
 							<div class="card__content">
-								<h4 class="card__ttl">1）詳細なヒアリングでお客様の希望の形に</h4>
+								<h4 class="card__ttl">1）事前の品質確認で発注後のミスマッチを防ぐ</h4>
 								<p class="card__txt">
-									ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+									初めての外注先であればその人がどれくらいの品質で制作できるのか分かりづらく、またコミュニケーションなど実際にやりとりをし始めてから思っていたのと違うというミスマッチが起こる可能性があります。そこでAIGVでは制作内容の一部をまず制作させていただき、その品質やそれまでのやりとりなどを総合的に判断いただき正式に発注するかどうかを決める事が可能です。
 								</p>
 							</div>
 							<div class="card__img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/s-outline-hearing@2x.png"
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/partner_img_1@2x.png"
 									alt="">
 							</div>
 						</li>
 
 						<li class="outline__card card">
 							<div class="card__content">
-								<h4 class="card__ttl">2）柔軟なご提案でお客様にあったご提案を</h4>
+								<h4 class="card__ttl">2）細かいご連絡で遅れが出ない取り組み</h4>
 								<p class="card__txt">
-									ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+									進捗連絡や改善提案などのご連絡を詳細にさせていただき、クライアント様のご負担をなるべく減らす事を意識して取り組んでまいります。これまでの案件でも同様のご対応させていただいておりますが「こまめに連絡してもらえるのは助かる」とクライアント様からおっしゃっていただいております。こうした取り組みを行う事でコミュニケーションを円滑に行い、最終的には納期の短縮にもつながると考えております。
 								</p>
 							</div>
 							<div class="card__img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/s-outline-advice@2x.png"
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/partner_img_2@2x.png"
 									alt="">
 							</div>
 						</li>
@@ -101,7 +100,7 @@
 						<div class="card__content">
 							<h4 class="card__ttl">ヒアリング</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								制作目的や内容などのサイトに関する情報や納期、価格、制作方法、公開可否など受注に関する事などをお伺いさせていただきます。
 							</p>
 						</div>
 					</li>
@@ -111,9 +110,9 @@
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/flow-design.svg" alt="">
 						</div>
 						<div class="card__content">
-							<h4 class="card__ttl">デザイン</h4>
+							<h4 class="card__ttl">素材提供</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								デザインやテキスト・画像など提供いただける素材に関して共有いただきます。またこちらで準備が必要なものについては打ち合わせをさせていただき決定していきます。
 							</p>
 						</div>
 					</li>
@@ -125,7 +124,7 @@
 						<div class="card__content">
 							<h4 class="card__ttl">コーディング</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								HTMLを用いたサイト/LP制作からWordPressのような動的サイトまで幅広くご対応可能です。またアニメーションやスライダーなどの動きのあるパーツの制作も可能です。
 							</p>
 						</div>
 					</li>
@@ -137,7 +136,7 @@
 						<div class="card__content">
 							<h4 class="card__ttl">納品</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								Zipファイル形式やサーバーへの直接UPなどクライアント様のご希望に合わせてご対応可能です。また納品後は10日間であれば修正対応を基本無料でさせていただきます。
 							</p>
 						</div>
 					</li>
@@ -157,16 +156,16 @@
 				<div class="price__content">
 					<dl class="price__data">
 						<div class="price__dataBox">
-							<dt class="price__dataTtl">ランディングページ作成</dt>
-							<dd class="price__dataCnt">¥100,000−</dd>
+							<dt class="price__dataTtl">静的サイトコーディング</dt>
+							<dd class="price__dataCnt">¥12,000~/Topページ　¥10,000~/下層ページ</dd>
 						</div>
 						<div class="price__dataBox">
-							<dt class="price__dataTtl">ランディングページ作成</dt>
-							<dd class="price__dataCnt">¥100,000−</dd>
+							<dt class="price__dataTtl">WordPress(テンプレート)</dt>
+							<dd class="price__dataCnt">¥15,000~/Topページ　¥13,000~/下層ページ</dd>
 						</div>
 						<div class="price__dataBox">
-							<dt class="price__dataTtl">ランディングページ作成</dt>
-							<dd class="price__dataCnt">¥100,000−</dd>
+							<dt class="price__dataTtl">WordPress(オリジナル)</dt>
+							<dd class="price__dataCnt">¥18,000~/Topページ　¥15,000~/下層ページ</dd>
 						</div>
 					</dl>
 					<p class="price__attention">金額は目安です。詳細はお問い合わせください</p>

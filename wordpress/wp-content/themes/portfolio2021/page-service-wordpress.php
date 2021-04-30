@@ -29,12 +29,11 @@
 
 		<section class="problem">
 			<div class="problem__container inner">
-				<h3 class="problem__ttl">Webサイト制作における課題を解決します</h3>
+				<h3 class="problem__ttl">WordPressを用いた制作を行います</h3>
 				<ul class="problem__lists">
-					<li class="problem__list">・Webサイト・LPを作りたいけど分からない事が多く自分では作る事ができない…</li>
-					<li class="problem__list">・Webサイト作成ツールを使って自分で作ってみたけど他のサイトと同じような感じになってしまう…</li>
-					<li class="problem__list">・Webサイト・LPを作成したいけど、どのような流れで進めていけば良いか分からない…</li>
-					<li class="problem__list">・なるべくコストをかけずにWebサイト・LPを制作したい。</li>
+					<li class="problem__list">・お知らせやブログなど更新頻度が多いサイトを作りたい…</li>
+					<li class="problem__list">・現在持っているサイトにお知らせなどの機能を追加したい…</li>
+					<li class="problem__list">・テンプレートを用いて自分でサイトを作ってみたけどなんだかしっくりこない…</li>
 				</ul>
 			</div>
 		</section>
@@ -43,8 +42,8 @@
 			<div class="points__container inner">
 				<h4 class="points__ttl">このサービスのポイント</h4>
 				<ul class="points__lists">
-					<li class="points__list">詳細なヒアリングを行いお客様のご希望について、イメージを共有しながら進めていきます。</li>
-					<li class="points__list">お客様のご予算などに合わせて、最適に方法をご提案いたします</li>
+					<li class="points__list">更新頻度の高いサイトをお客様自身で簡単に更新できるサイトを制作します</li>
+					<li class="points__list">テンプレートテーマだけでなくオリジナルテーマでお客様のイメージにあったサイトを制作します</li>
 				</ul>
 			</div>
 		</section>
@@ -59,26 +58,26 @@
 					<ul class="outline__cards">
 						<li class="outline__card card">
 							<div class="card__content">
-								<h4 class="card__ttl">1）詳細なヒアリングでお客様の希望の形に</h4>
+								<h4 class="card__ttl">1）WordPressを用いた動的ページの制作</h4>
 								<p class="card__txt">
-									ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+									お知らせやブログなどの更新頻度や更新箇所が多いページに関しては「WordPress」で制作いたします。WordPressは現在公開されているサイトでも多く使用されているサービスであり、お客様自身でお知らせの更新やブログの記載が可能となります。
 								</p>
 							</div>
 							<div class="card__img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/s-outline-hearing@2x.png"
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/wordpress_img_1@2x.png"
 									alt="">
 							</div>
 						</li>
 
 						<li class="outline__card card">
 							<div class="card__content">
-								<h4 class="card__ttl">2）柔軟なご提案でお客様にあったご提案を</h4>
+								<h4 class="card__ttl">2）ご予算に合わせた提案を</h4>
 								<p class="card__txt">
-									ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+									WordPressでの実装方法は大きく分けて「テンプレートテーマによる実装」と「オリジナルテーマによる実装」の2つがあります。前者はサイトのデザインにテンプレートを使用するためデザインに縛りがある代わりに、低コスト・短納期となるのがメリットです。オリジナルテーマに関してはテンプレートテーマでの実装と比較してコスト増や制作までの時間は必要となりますが、完全オリジナルのためデザインの自由度が高くお客様のイメージに合わせた制作が可能です。
 								</p>
 							</div>
 							<div class="card__img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/s-outline-advice@2x.png"
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/wordpress_img_2@2x.png"
 									alt="">
 							</div>
 						</li>
@@ -101,7 +100,7 @@
 						<div class="card__content">
 							<h4 class="card__ttl">ヒアリング</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								お客様の作りたいサイトのイメージを共有させていただき、テンプレートテーマ/オリジナルテーマのどちらが適切か、お客様によって最適な方法をご提案いたします。
 							</p>
 						</div>
 					</li>
@@ -113,7 +112,7 @@
 						<div class="card__content">
 							<h4 class="card__ttl">デザイン</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								テンプレートテーマであればどのテンプレートを使いどのようにカスタマイズしていくのか、オリジナルテーマであればどのようなデザインにするのかというところをお客様と一緒に考えていきます。
 							</p>
 						</div>
 					</li>
@@ -125,7 +124,7 @@
 						<div class="card__content">
 							<h4 class="card__ttl">コーディング</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								WordPressではお知らせの更新の他にお問い合わせフォームなど様々な機能をつける事が可能です。お客様が希望されるサイトに合わせてカスタマイズし、コーディング・実装を行います。
 							</p>
 						</div>
 					</li>
@@ -137,7 +136,7 @@
 						<div class="card__content">
 							<h4 class="card__ttl">納品</h4>
 							<p class="card__txt">
-								ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+								基本的には作成したファイルをお渡しし、お客様似てWordPressをダウンロードしたサーバーへUPしていただきますがこちらで一括してお任せいただくことも可能ですのでお気軽にご相談いただければと思います。
 							</p>
 						</div>
 					</li>
@@ -156,19 +155,17 @@
 
 				<div class="price__content">
 					<dl class="price__data">
+
 						<div class="price__dataBox">
-							<dt class="price__dataTtl">ランディングページ作成</dt>
-							<dd class="price__dataCnt">¥100,000−</dd>
+							<dt class="price__dataTtl">テンプレートテーマでの制作</dt>
+							<dd class="price__dataCnt">¥40,000~/Topページ　¥20,000~/下層ページ</dd>
 						</div>
 						<div class="price__dataBox">
-							<dt class="price__dataTtl">ランディングページ作成</dt>
-							<dd class="price__dataCnt">¥100,000−</dd>
-						</div>
-						<div class="price__dataBox">
-							<dt class="price__dataTtl">ランディングページ作成</dt>
-							<dd class="price__dataCnt">¥100,000−</dd>
+							<dt class="price__dataTtl">オリジナルテーマでの制作</dt>
+							<dd class="price__dataCnt">¥50,000~/Topページ　¥30,000~/下層ページ</dd>
 						</div>
 					</dl>
+
 					<p class="price__attention">金額は目安です。詳細はお問い合わせください</p>
 				</div>
 
@@ -183,7 +180,8 @@
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/web_lp@2x.png" alt="">
 					</div>
 					<h4 class="card__ttl">Webサイト・LP制作</h4>
-					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/web_lp" class="button contact__button card__button">詳しくはこちら</a>
+					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/web_lp"
+						class="button contact__button card__button">詳しくはこちら</a>
 				</li>
 
 				<li class="anotherlink__card card">
@@ -191,9 +189,10 @@
 						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/partner@2x.png" alt="">
 					</div>
 					<h4 class="card__ttl">Web制作　外注パートナー</h4>
-					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/partner" class="button contact__button card__button">詳しくはこちら</a>
+					<a href="<?php echo esc_url( home_url( 'service' ) ); ?>/partner"
+						class="button contact__button card__button">詳しくはこちら</a>
 				</li>
 			</ul>
 		</section>
 
-<?php get_footer(); ?>
+		<?php get_footer(); ?>

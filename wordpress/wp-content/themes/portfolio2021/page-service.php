@@ -37,13 +37,14 @@
 
 				<div class="service__content">
 					<ul class="service__cards">
+
 						<li class="service__card card">
 							<div class="card__img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/web_lp@2x.png" alt="">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/partner@2x.png" alt="">
 							</div>
-							<h4 class="card__ttl">Webサイト・LP制作</h4>
-							<p class="card__content">新規の顧客獲得や事業の周知などお客様の目的や課題に沿ったWebサイト・ランディングページの制作を行います。</p>
-							<a href="<?php echo esc_url( get_permalink() ); ?>web_lp" class="button contact__button card__button">詳しくはこちら</a>
+							<h4 class="card__ttl">Web制作　外注パートナー</h4>
+							<p class="card__content">Web制作の外注パートナーとしての活動も行なっております。ただの作業者ではなく自分から提供できる価値は何か」を常に考えていきます。</p>
+							<a href="<?php echo esc_url( get_permalink() ); ?>partner" class="button contact__button card__button">詳しくはこちら</a>
 						</li>
 
 						<li class="service__card card">
@@ -57,12 +58,13 @@
 
 						<li class="service__card card">
 							<div class="card__img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/partner@2x.png" alt="">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/web_lp@2x.png" alt="">
 							</div>
-							<h4 class="card__ttl">Web制作　外注パートナー</h4>
-							<p class="card__content">Web制作の外注パートナーとしての活動も行なっております。ただの作業者ではなく自分から提供できる価値は何か」を常に考えていきます。</p>
-							<a href="<?php echo esc_url( get_permalink() ); ?>partner" class="button contact__button card__button">詳しくはこちら</a>
+							<h4 class="card__ttl">Webサイト・LP制作</h4>
+							<p class="card__content">新規の顧客獲得や事業の周知などお客様の目的や課題に沿ったWebサイト・ランディングページの制作を行います。</p>
+							<a href="<?php echo esc_url( get_permalink() ); ?>web_lp" class="button contact__button card__button">詳しくはこちら</a>
 						</li>
+
 					</ul>
 				</div>
 			</div>

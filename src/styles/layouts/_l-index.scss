@@ -166,12 +166,17 @@
 		}
 
 		&__cardCnt{
-			max-width: 670px;
+			width: 670px;
+				
+			@include media-sp{
+				width: 100%;
+			}
 		}
 
 		&__cardTtl{
 			font-size: 2.5rem;
 			@include media-sp{
+				font-size: 2rem;
 				margin: 20px 0 0 0 ;
 			}
 		}
@@ -186,10 +191,13 @@
 		}
 
 		&__cardImg{
-			max-width: 350px; 
+			width: 350px; 
 			margin: 0 0 0 40px; 
-			@include IMG{};
+			img{
+				width: 100%;
+			}
 			@include media-sp{
+				width: 100%; 
 				margin: 0 auto;
 			}
 		}

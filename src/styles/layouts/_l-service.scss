@@ -9,6 +9,10 @@
 		&__cards{
 			display: flex;
 			margin-top: 40px;
+
+			@include media-tab-pro{
+				flex-direction: column;
+			}
 		}
 
 		&__card{
@@ -21,6 +25,21 @@
 			&:nth-child(2){
 				border-left: none;
 				border-right: none;
+
+				@include media-tab-pro{
+					border-left: 1px solid $MAIN_COLOR;
+					border-right: 1px solid $MAIN_COLOR;
+				}
+
+			}
+
+			@include media-tab-pro{
+				margin: 0 auto 20px; 
+				width: 60%;
+			}
+
+			@include media-sp{
+				width: 100%;
 			}
 		}
 

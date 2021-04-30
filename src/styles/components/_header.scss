@@ -24,7 +24,7 @@
 
   &__nav{
   display: flex ;
-  @include media-sp{
+  @include media-tab{
     display: none;
   }
   }
@@ -83,7 +83,7 @@
     bottom: -250px;
     transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1280px;
     width: 90%;
@@ -133,7 +133,7 @@
     width: 40px;
     height: 30px;
 
-    @include media-sp{
+    @include media-tab{
       display: block;
     }
   }
@@ -259,5 +259,12 @@
     position: fixed;
     display: block;
     animation: sp_menu 0.5s ease 0s 1 forwards;
+  }
+}
+
+.is-page{
+  &::before{
+    width: 100%;
+    transition: all 0.5s;
   }
 }

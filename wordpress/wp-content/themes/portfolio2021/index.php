@@ -93,13 +93,13 @@
 
 						<div class="service__card">
 							<div class="service__cardCnt">
-								<h4 class="service__cardTtl">Webサイト・LP (ランディングページ)制作</h4>
+								<h4 class="service__cardTtl">Web制作　外注パートナー</h4>
 								<p class="service__cardTxt">
-									新規の顧客獲得や事業の周知などお客様の目的や課題に沿ったWebサイト・ランディングページの制作を行います。同じ業種や分野であってもお客様によって解決するべき課題は異なります。その課題解決のためにお客様と一緒に作り上げていきます。また近年のWebサイトはPCサイズだけでなくタブレットやスマートフォンなど画面のサイズを様々であるためレスポンシブ対応するなど、時代にあったWebサイト制作を行います。
+									Web制作の外注パートナーとしての活動も行なっております。ただの作業者ではなく「どうすればお役に立つ事ができるか」「自分から提供できる価値は何か」を常に考えていきます。品質や納期、レスポンスの速さなどのコミュニケーションコストをかけないといった部分はもちろんの事、お客様のご要望に対して柔軟に対応しさらにより良いものを作るために、こちらから提案などもさせて頂きながら目的達成に向かって積極的に行動していきます。
 								</p>
 							</div>
 							<div class="service__cardImg">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/service_1@2x.jpg" alt="">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/service_3@2x.jpg" alt="">
 							</div>
 						</div>
 
@@ -117,13 +117,13 @@
 
 						<div class="service__card">
 							<div class="service__cardCnt">
-								<h4 class="service__cardTtl">Web制作　外注パートナー</h4>
+								<h4 class="service__cardTtl">Webサイト・LP制作</h4>
 								<p class="service__cardTxt">
-									Web制作の外注パートナーとしての活動も行なっております。ただの作業者ではなく「どうすればお役に立つ事ができるか」「自分から提供できる価値は何か」を常に考えていきます。品質や納期、レスポンスの速さなどのコミュニケーションコストをかけないといった部分はもちろんの事、お客様のご要望に対して柔軟に対応しさらにより良いものを作るために、こちらから提案などもさせて頂きながら目的達成に向かって積極的に行動していきます。
+									新規の顧客獲得や事業の周知などお客様の目的や課題に沿ったWebサイト・ランディングページの制作を行います。同じ業種や分野であってもお客様によって解決するべき課題は異なります。その課題解決のためにお客様と一緒に作り上げていきます。また近年のWebサイトはPCサイズだけでなくタブレットやスマートフォンなど画面のサイズを様々であるためレスポンシブ対応するなど、時代にあったWebサイト制作を行います。
 								</p>
 							</div>
 							<div class="service__cardImg">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/service_3@2x.jpg" alt="">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/service_1@2x.jpg" alt="">
 							</div>
 						</div>
 

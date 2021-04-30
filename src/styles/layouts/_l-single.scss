@@ -1,0 +1,148 @@
+.single {
+  background: #eeebe8;
+  // 共通部分(single内限定)------------
+  h1,
+  h2 {
+    font-family: $DEFAULT_FONT_FAMILY;
+  }
+
+  .content-width {
+    max-width: 800px;
+    margin: auto;
+  }
+  // 共通部分(single内限定)------------
+  .article {
+    padding-top: 160px;
+
+    @include media-sp {
+      padding-top: 130px;
+    }
+
+    &__img {
+      width: 100%;
+
+      img {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    &__info-date {
+      font-family: $DEFAULT_FONT_FAMILY;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+    }
+
+    &__content {
+      max-width: 600px;
+      padding-bottom: 200px;
+      margin: 61px auto 0;
+
+      @include media-sp {
+        padding-bottom: 100px;
+        margin-top: 30px;
+      }
+    }
+
+    &__ttl {
+      padding-left: 20px;
+      margin-bottom: 43px;
+      font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: (32 / 24);
+      word-break: break-all;
+      border-left: 1px solid $FONT_COLOR;
+
+      @include media-sp {
+        margin-bottom: 22px;
+        font-size: 2rem;
+      }
+    }
+
+    &__txt {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 40px;
+        font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+        font-weight: bold;
+        line-height: (32 / 24);
+        word-break: break-all;
+
+        @include media-sp {
+          margin-bottom: 20px;
+        }
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.4rem;
+
+        &:not(:last-of-type) {
+          margin-bottom: 60px;
+
+          @include media-sp {
+            margin-bottom: 30px;
+            text-align: justify;
+          }
+        }
+      }
+
+      a {
+        text-decoration: underline;
+        word-break: break-all;
+
+        &:hover {
+          color: $MAIN_COLOR;
+        }
+      }
+
+      figure {
+        margin-bottom: 60px;
+
+        @include media-sp {
+          margin-bottom: 30px;
+        }
+      }
+
+      .wp-block-image {
+        img {
+          height: auto;
+        }
+      }
+    }
+
+    .post-categories {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: -5px;
+
+      & li {
+        padding: 7px 14px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+        background: #fff;
+        border: 1px solid $FONT_COLOR;
+        border-radius: 999px;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
