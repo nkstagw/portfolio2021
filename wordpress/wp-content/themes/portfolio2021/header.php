@@ -171,8 +171,8 @@
 						<li class="header__spNavitem"><a href="<?php echo esc_url( home_url( 'about' ) ); ?>"
 								class="header__spLink">AIGVについて</a></li>
 						<li class="header__spNavitem"><a href="<?php echo esc_url( home_url( 'news' ) ); ?>" class="header__spLink">お知らせ</a></li>
-						<li class="header__spNavitem"><a href="#" class="header__spLink">サイトマップ</a></li>
-						<li class="header__spNavitem"><a href="#" class="header__spLink">プライバシーポリシー</a></li>
+						<!-- <li class="header__spNavitem"><a href="#" class="header__spLink">サイトマップ</a></li>
+						<li class="header__spNavitem"><a href="#" class="header__spLink">プライバシーポリシー</a></li> -->
 					</ul>
 				</nav>
 				<hr>
