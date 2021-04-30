@@ -77,7 +77,7 @@ $('.form__tabItem').click(function () {
 		// 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
 		window.addEventListener('resize', setHeight);
 
-			// ボックスを下からフェードイン
+	// ボックスを下からフェードイン
 	$(function () {
 		$(window).scroll(function () {
 			$(".fade-in-bottom").each(function () {

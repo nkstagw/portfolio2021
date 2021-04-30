@@ -42,7 +42,7 @@
 					<h3 class="section__ttl">AIGVの特長</h3>
 				</div>
 				<div class="value__content">
-					<div class="value__card">
+					<div class="value__card fade-in-bottom">
 						<div class="value__cardCnt">
 							<div class="value__cardHead">
 								<span class="number">1</span>
@@ -57,7 +57,7 @@
 						</div>
 					</div><!-- card -->
 
-					<div class="value__card">
+					<div class="value__card fade-in-bottom">
 						<div class="value__cardCnt">
 							<div class="value__cardHead">
 								<span class="number">2</span>
@@ -71,7 +71,7 @@
 						</div>
 					</div><!-- card -->
 
-					<div class="value__card">
+					<div class="value__card fade-in-bottom">
 						<div class="value__cardCnt">
 							<div class="value__cardHead">
 								<span class="number">3</span>
@@ -89,7 +89,7 @@
 			</div><!-- container -->
 		</section>
 
-		<section class="outline">
+		<section class="outline fade-in-bottom">
 			<div class="outline__container inner">
 				<div class="section__head">
 					<p class="section__enTtl">Outline</p>
