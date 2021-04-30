@@ -78,7 +78,7 @@
 			</div><!-- container -->
 		</section>
 
-		<section class="service">
+		<section class="service fade-in-bottom">
 			<div class="service__container inner">
 				<div class="service__head">
 					<p class="section__enTtl">Service</p>
@@ -133,7 +133,7 @@
 			</div><!-- container -->
 		</section>
 
-		<section class="about">
+		<section class="about fade-in-bottom">
 			<div class="about__container inner">
 				<div class="about__head">
 					<p class="section__enTtl">About</p>
@@ -177,7 +177,7 @@
 			</div><!-- container -->
 		</section>
 
-		<section class="news">
+		<section class="news fade-in-bottom">
 			<div class="news__container inner">
 				<div class="news__head">
 					<p class="section__enTtl">News</p>

@@ -77,4 +77,27 @@ $('.form__tabItem').click(function () {
 		// 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
 		window.addEventListener('resize', setHeight);
 
+			// ボックスを下からフェードイン
+	$(function () {
+		$(window).scroll(function () {
+			$(".fade-in-bottom").each(function () {
+				var targetElement = $(this).offset().top;
+				var scroll = $(window).scrollTop();
+				var windowHeight = $(window).height();
+				if (scroll > targetElement - windowHeight + 200) {
+					$(this).css("opacity", "1");
+					$(this).css("transform", "translateY(0)");
+				}
+			});
+		});
+	});
+
+	//ローディング
+	$(window).on("load",function () {
+		
+		setTimeout(function () {
+			$('.loader').fadeOut();
+		}, 600)
+	});
+
 });

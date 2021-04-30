@@ -295,3 +295,10 @@ input[type="radio"]{
     padding: 0 30px;
   }
 }
+
+//下からのフェードイン
+.fade-in-bottom {
+	transition: 1s;
+	opacity: 0;
+	transform: translateY(100px);
+}

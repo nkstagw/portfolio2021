@@ -170,4 +170,12 @@
 			</div>
 		</div>
 
+		<div class="loader">
+			<div class="loader__inner">
+				<div class="line line1"></div>
+				<div class="line line2"></div>
+				<div class="line line3"></div>
+			</div>
+		</div>
+
 	</header>
