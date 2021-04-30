@@ -35,7 +35,7 @@
 			<div class="footer__logo">
 				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/AIGV_white.svg" alt="">
 			</div>
-			<p class="copyright"> © AIGV All Rights Reserved.</p>
+			<p class="copyright"> © 2021 AIGV</p>
 		</div>
 
 		<nav class="footer__nav">

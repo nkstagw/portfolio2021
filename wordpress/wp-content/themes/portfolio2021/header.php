@@ -8,7 +8,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html prefix="og:https://ogp.me/ns#">
 
 <head>
 	<meta charset="UTF-8">
@@ -18,6 +18,17 @@
 	<meta name="description" content="index description">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<?php echo esc_url( home_url() ); ?>">
+	<meta property="og:title" content="AIGV">
+	<meta property="og:description" content="AIGVのポートフォリオサイト">
+	<meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fv_2@2x.png">
+	<meta property="og:site_name" content="AIGV">
+	<meta property="og:locale" content="ja_JP">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:domain" content="">
 
 	<!-- font CDN -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">

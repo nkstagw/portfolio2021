@@ -156,7 +156,7 @@
 				<div class="price__content">
 					<dl class="price__data">
 						<div class="price__dataBox">
-							<dt class="price__dataTtl">静的サイトコーディング</dt>
+							<dt class="price__dataTtl">静的サイト</dt>
 							<dd class="price__dataCnt">¥12,000~/Topページ　¥10,000~/下層ページ</dd>
 						</div>
 						<div class="price__dataBox">
@@ -168,7 +168,7 @@
 							<dd class="price__dataCnt">¥18,000~/Topページ　¥15,000~/下層ページ</dd>
 						</div>
 					</dl>
-					<p class="price__attention">金額は目安です。詳細はお問い合わせください</p>
+					<p class="price__attention">上記金額はコーディングのみの金額であり目安です。詳細はお問い合わせください</p>
 				</div>
 
 			</div>
