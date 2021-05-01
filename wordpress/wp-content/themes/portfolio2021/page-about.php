@@ -111,8 +111,8 @@
 							<dd class="outline__cntItem">お問い合わせよりご連絡お願いします</dd>
 						</div>
 						<div class="outline__cntBox">
-							<dt class="outline__cntTtl--last">事業内容</dt>
-							<dd class="outline__cntItem--last">
+							<dt class="outline__cntTtl last">事業内容</dt>
+							<dd class="outline__cntItem">
 								Webサイト制作・デザイン<br>
 								Webサイト保守<br>
 								Web制作外注パートナー

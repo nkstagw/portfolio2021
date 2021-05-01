@@ -34,6 +34,7 @@ add_action( 'wp_enqueue_scripts', 'add_stylesheet' );
  * @return void
  */
 function add_script() {
+	wp_enqueue_script( 'google-manager', 'https://www.googletagmanager.com/gtag/js?id=G-8291HZ1PTQ', array(), '1.0', false );
 	wp_enqueue_script( 'jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'swiper-js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array(), '1.0', true );

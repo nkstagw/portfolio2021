@@ -118,11 +118,19 @@ input[type="radio"]{
   &__enTtl{
     font-size: 2.5rem;
     color: $MAIN_COLOR;
+
+		@include media-sp{
+			font-size: 2rem;
+		}
   }
 
   &__ttl{
     font-size: 3.5rem;
 		font-weight: normal;
+
+		@include media-sp{
+			font-size: 3rem;
+		}
   }
 
   &__txt{

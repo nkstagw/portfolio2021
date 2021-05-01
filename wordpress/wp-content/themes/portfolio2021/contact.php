@@ -39,9 +39,9 @@
 				</div>
 				<div class="form__tabBox">
 					<input type="radio" id="tab__01">
-					<label for="tab__01" class="form__tabItem tabItem is-active" data-tab="mail">フォームからのお問い合わせ</label>
+					<label for="tab__01" class="form__tabItem tabItem is-active" data-tab="mail">フォームからの<br class="br-sp">お問い合わせ</label>
 					<input type="radio" id="tab__02">
-					<label for="tab__02" class="form__tabItem tabItem" data-tab="twitter">Twitter DMからのお問い合わせ</label>
+					<label for="tab__02" class="form__tabItem tabItem" data-tab="twitter">Twitter DMからの<br class="br-sp">お問い合わせ</label>
 				</div>
 				<ul class="from__content">
 					<!-- tabの中身 1つ目 -->

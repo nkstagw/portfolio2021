@@ -45,6 +45,11 @@
 				background: $MAIN_COLOR;
 				color: $SUB_COLOR_WHITE;
 			}
+
+			@include media-sp{
+				padding: 15px 10px;
+				font-size: 1.2rem;
+			}
 		}
 
 		&__cntItem {
