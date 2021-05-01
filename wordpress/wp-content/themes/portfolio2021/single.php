@@ -11,6 +11,15 @@
 
 <main class="single">
 	<article>
+
+		<section class="topicPath inner">
+			<span class="topicPath__item"><a href="<?php echo esc_url( home_url() ); ?>"
+					class="topicPath__link">ホーム</a></span>
+			<span class="topicPath__item"><a href="<?php echo esc_url( home_url( 'news' ) ); ?>"
+					class="topicPath__link">news</a></span>
+			<span class="topicPath__item"><?php the_title(); ?></span>
+		</section>
+
 		<section class="article content-padding">
 			<div class="content-width">
 				<div class="article__info">
