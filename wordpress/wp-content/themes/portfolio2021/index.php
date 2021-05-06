@@ -19,8 +19,8 @@
 						alt=""></li>
 			</ul>
 			<div class="fv__box">
-				<h2 class="fv__ttl">お客様にとって一番 <br class="br-tab">「お節介な人」であるために</h2>
-				<p class="fv__enTtl">Meddling in a Good Way</p>
+				<h2 class="fv__ttl">お客様と共に歩む<br class="br-tab">「最良のパートナー」であるために</h2>
+				<p class="fv__enTtl">To be the "Best Partner" for you</p>
 			</div>
 		</section>
 
@@ -140,7 +140,7 @@
 					<h3 class="section__ttl">AIGVについて</h3>
 					<p class="section__txt">
 						AIGVでは人と人とのつながりが最も大切だと考えております。積極的に人や課題に関わりつつ信念を持って行動し、<br class="br-pc">
-						お客様にとって「良い意味でお節介な人」になる事を目指しています。
+						お客様にとって「最良のパートナー」になる事を目指しています。
 					</p>
 				</div>
 
